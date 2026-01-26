@@ -1,6 +1,5 @@
 const express = require('express')
 const cors = require('cors')
-const dotenv = require('dotenv')
 const path = require('path')
 const mongoose = require('mongoose')
 
@@ -10,14 +9,17 @@ const PortFoModel = require('./model/Portoflio')
 app.use(express.json())
 app.use(cors())
 
-dotenv.config({ path: path.join(__dirname, '.env') })
-
-mongoose.connect(process.env.MONGO_URL)
+mongoose.connect('mongodb+srv://deeshiss_db_user:Tv0ITx0SUB5B8KC2@deeshix.q03jd3t.mongodb.net/deeshix67?appName=deeshix')
 .then(() => {
     console.log('Successfully MongoDB connected')
 })
 .catch((err) => {
     console.log('MongoDB connection failed', err)
+})
+const __dirnames = path.resolve()
+app.use(express.static(path.join(__dirnames,"frontend/build")))
+app.use("/",(req,res)=> {
+    res.sendFile(path.resolve(__dirnames,"frontend,","build","index.html"))
 })
 
 app.post('/book', async (req, res) => {
@@ -54,6 +56,6 @@ app.post('/book', async (req, res) => {
     }
 })
 
-app.listen(process.env.PORT, () => {
-    console.log(`Server is running on port ${process.env.PORT}`)
+app.listen(5000, () => {
+    console.log(`Server is running on port 5000`)
 })
