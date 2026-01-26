@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaAws, FaCloud, FaCss3, FaDocker, FaElementor, FaFire, FaGit, FaHtml5, FaJava, FaJs, FaLeaf, FaNodeJs, FaPhone, FaPhoneAlt, FaPhp, FaPython, FaReact } from 'react-icons/fa'
+import {FaCloud, FaCss3, FaDocker, FaElementor, FaFire, FaGit, FaHtml5, FaJava, FaJs, FaLeaf, FaNodeJs, FaPhoneAlt, FaPhp, FaPython, FaReact } from 'react-icons/fa'
 import Callus from '../components/Call-us'
 
 const Technoloy = () => {

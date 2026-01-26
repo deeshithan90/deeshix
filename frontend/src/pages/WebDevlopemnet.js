@@ -1,6 +1,5 @@
 import React from 'react'
 import web from '../images/webd.jpg'
-import image1 from '../images/ecomerce.avif'
 import Callus from '../components/Call-us'
 
 const WebDevlopemnet = () => {
