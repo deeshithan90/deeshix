@@ -16,11 +16,7 @@ mongoose.connect('mongodb+srv://deeshiss_db_user:Tv0ITx0SUB5B8KC2@deeshix.q03jd3
 .catch((err) => {
     console.log('MongoDB connection failed', err)
 })
-const __dirnames = path.resolve()
-app.use(express.static(path.join(__dirnames,"frontend/build")))
-app.use("/",(req,res)=> {
-    res.sendFile(path.resolve(__dirnames,"frontend,","build","index.html"))
-})
+
 
 app.post('/api/book', async (req, res) => {
     try {
@@ -54,6 +50,13 @@ app.post('/api/book', async (req, res) => {
             error: error.message
         })
     }
+})
+
+
+const __dirnames = path.resolve()
+app.use(express.static(path.join(__dirnames,"frontend/build")))
+app.use("/",(req,res)=> {
+    res.sendFile(path.resolve(__dirnames,"frontend,","build","index.html"))
 })
 
 app.listen(5000, () => {
