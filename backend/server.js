@@ -22,7 +22,7 @@ app.use("/",(req,res)=> {
     res.sendFile(path.resolve(__dirnames,"frontend,","build","index.html"))
 })
 
-app.post('/book', async (req, res) => {
+app.post('/api/book', async (req, res) => {
     try {
         const { name, email, contact, productEnquiry, describe } = req.body
 
