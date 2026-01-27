@@ -9,7 +9,7 @@ const PortFoModel = require('./model/Portoflio')
 app.use(express.json())
 app.use(cors())
 
-mongoose.connect('mongodb+srv://deeshiss_db_user:Tv0ITx0SUB5B8KC2@deeshix.q03jd3t.mongodb.net/deeshix67?appName=deeshix')
+mongoose.connect('mongodb+srv://deeshiss_db_user:Tv0ITx0SUB5B8KC2@deeshix.q03jd3t.mongodb.net/mydb')
 .then(() => {
     console.log('Successfully MongoDB connected')
 })
