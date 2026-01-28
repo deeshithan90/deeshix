@@ -358,6 +358,13 @@ html {
   background-color: black;
 }
 
+.hyx{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 240px;
+}
+
 .deeshi{
    width: 300px;
    height: 300px;
@@ -429,6 +436,16 @@ html {
    color: #0F2632;
    display: inline-block;
 }
+
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about p{
+  width: 700px;
+}
 /* ========================= */
 /* TABLET (max-width: 992px) */
 /* ========================= */
@@ -437,15 +454,7 @@ html {
   display: block;
 }
   .navbar {
-    flex-direction: column;
-    row-gap: 10px;
-    padding: 15px;
     top: 0;
-  }
-
-  .nav-sub {
-    flex-wrap: wrap;
-    justify-content: center;
   }
 
   .container {
@@ -507,12 +516,41 @@ html {
     width: 100px;
   }
 
-  .typing {
-    width: 100%;
-    font-size: 10px;
-    animation: typing 6s steps(20) infinite;
+  .hy{
+    display: none;
   }
 
+  .bg{
+    background-color: #0F2632;
+    color: #f7f7f7;
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  .typing {
+    width: 100%;
+    font-size: 190px;
+    animation: typing 6s steps(15) infinite;
+  }
+  .about p {
+    width: auto;
+  }
+.image9{
+  display: none;
+}
+.imh{
+  display: none;
+}
+.yu{
+  display: block;
+}
+  @keyframes typing {
+     from { width: 0; }
+  to   { width: 55ch; }
+  }
+.hyx{
+  display: block;
+}
   .f-1 {
     flex-direction: column;
     row-gap: 20px;
@@ -549,6 +587,10 @@ html {
   .footer {
     flex-direction: column;
     row-gap: 15px;
+  }
+
+  .about{
+    display: block;
   }
 
   .ju,

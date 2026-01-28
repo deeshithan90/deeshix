@@ -67,27 +67,8 @@ const Technoloy = () => {
   }
   return (
     <>
-    <div style={{display:'flex',alignItems:'center',justifyContent:'center',marginTop:240}}>
-      <div className='btn'>
-         <button onClick={click}>Frontend</button>
-         <br/>
-         <br/>
-         <button onClick={click2}>Backend</button>
-         <br/>
-         <br/>
-         <button onClick={click3}>Database</button>
-         <br/>
-         <br/>
-         <button onClick={click4}>Mobile</button>
-         <br/>
-         <br/>
-         <button onClick={click5}>Cloud</button>
-         <br/>
-         <br/>
-         <button onClick={click6}>Tools</button>
-      </div>
-    </div>
-    <div style={leftco ? {padding:20 , width : 300, backgroundColor:'#0F2632', position : 'absolute', transition:1, top:-40, left:-430} : {padding:20 ,transition:1, backgroundColor:'#0F2632',width : 400, height:200, position : 'absolute', top:240, bottom:240, left:30, border :'#41C1BA 2px solid',borderRadius:20 }}>
+    <div className='hyx'>
+    <div style={leftco ? {padding:20 , width : 300, backgroundColor:'#0F2632', display : 'none'} : {padding:20 ,transition:1, backgroundColor:'#0F2632',width : 300, height:200, border :'#41C1BA 2px solid',borderRadius:20 , display:'block'}}>
        {s1 ? <div>
           <div style={{display:'flex',alignItems:'center',justifyContent:'space-around'}}>
             <FaHtml5 color='red' size={60}/>
@@ -135,8 +116,27 @@ const Technoloy = () => {
           </div>
       </div> :  <div></div>}
     </div>
-
-    <div style={leftco ? {padding:20 , width : 300, backgroundColor:'#0F2632', position : 'absolute', transition:1, top:-40, right:-550} : {padding:20 ,transition:1, backgroundColor:'#0F2632',width : 400, height:200, position : 'absolute', top:240, bottom:240, right:30, color:'white', fontSize:20, border :'#41C1BA 2px solid', borderRadius:20 }}>
+<br/>
+<div className='btn'>
+         <button onClick={click}>Frontend</button>
+         <br/>
+         <br/>
+         <button onClick={click2}>Backend</button>
+         <br/>
+         <br/>
+         <button onClick={click3}>Database</button>
+         <br/>
+         <br/>
+         <button onClick={click4}>Mobile</button>
+         <br/>
+         <br/>
+         <button onClick={click5}>Cloud</button>
+         <br/>
+         <br/>
+         <button onClick={click6}>Tools</button>
+      </div>
+<br/>
+    <div style={leftco ? {padding:20 , width : 300, backgroundColor:'#0F2632', display:'none'} : {padding:20 ,transition:1, backgroundColor:'#0F2632',width : 300, height:200, display:'block', color:'white', fontSize:20, border :'#41C1BA 2px solid', borderRadius:20 }}>
        {s1 ? <div>
           <div style={{display:'flex',alignItems:'center',justifyContent:'space-around'}}>
             <p>HTML</p>
@@ -183,6 +183,7 @@ const Technoloy = () => {
             <p>DATA STRUCTURE</p>
           </div>
       </div> :  <div></div>}
+    </div>
     </div>
     <Callus/>
     </>

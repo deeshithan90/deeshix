@@ -11,8 +11,8 @@ const Callus = () => {
         </div>
          <center>
             <div>
-              <p className='typing text-2xl' style={{color:'#f7f7f7'}}>Ready to build a website that fits your budget, meets your goals, and grows your business?</p>
-              <p className='typing text-2xl' style={{textAlign:'center',color:'#f7f7f7'}}>Contact us today for a free consultation! Ph : (+91) 8148181929</p>
+              <p className='typing' style={{color:'#f7f7f7'}}>Ready to build a website that fits your budget, meets your goals, and grows your business?</p>
+              <p className='typing' style={{textAlign:'center',color:'#f7f7f7'}}>Contact us today for a free consultation! Ph : (+91) 8148181929</p>
          </div>
          </center>
     </div>

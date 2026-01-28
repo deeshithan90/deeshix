@@ -9,7 +9,7 @@ import {toast} from 'react-hot-toast'
 const Navbar = ({sett,se}) => {
 
    const [uis,setuis] = useState(false)
-   const [uisf,setuisf] = useState(false)
+   const [uisff,setuisf] = useState(false)
    const [uis7,setuis7] = useState(false)
    const [ui6,setui6] = useState(false)
 
@@ -90,6 +90,10 @@ const [formData, setFormData] = useState({
    }
    function x(){
       setui(false)
+   }
+   function click90(e){
+    e.preventDefault()
+    setuisf(true)
    }
   return (
    <>
@@ -184,42 +188,51 @@ const [formData, setFormData] = useState({
 </form>
  : <div></div>}
        </div>
-       <p className='f7' onClick={()=> setuisf(true)} style={{fontSize:30,color:'white',}}><FaBars/></p>
+       <div>
+          <p className='f7' onClick={click90} style={{fontSize:30,color:'white'}}><FaBars/></p>
+       </div>
     </nav>
-    {uisf ? <div className='side-Navbar'>
-      <p className='text-center'><FaXmark color='white' size={20}/></p>
+    {uisff ? <div className='side-Navbar'>
+      <p className='text-center' onClick={()=> setuisf(false)}><FaXmark color='white' size={20}/></p>
+      <br/>
         <div>
-            <Link onClick={window.location.href = "/"}>
+            <Link onClick={() => window.location.href = "/"}>
                <p>Home</p>
             </Link>
             <br/>
             <p onClick={()=> setuis(true)}>About</p>
             <br/>
-            {uis ? <div>
+            {uis ? <div className='bg'>
                <Link onClick={()=> window.speechSynthesis.cancel()}>
                     <p onClick={()=> window.location.href='/About'}>About us</p>
                 </Link>
+                <br/>
                <Link to={"/technology"}>
                   <p onClick={()=> window.speechSynthesis.cancel()}>Technologies We Use</p>
                </Link>
+               <br/>
                 <Link to={"/industries"}>
                    <p onClick={()=> window.speechSynthesis.cancel()}>Industries We Serve</p>
                 </Link>
+                <br/>
                 <Link to={"/Vision-mission"}>
                 <p onClick={()=> window.speechSynthesis.cancel()}> Vision and mission</p>
                 </Link>
-                <p><a onClick={()=> window.speechSynthesis.cancel()} style={{textDecoration:'none',color:'#2776EA'}} href='/#id6'>Why Choose us</a></p>
+                <br/>
+                <p><a onClick={()=> window.speechSynthesis.cancel()} style={{textDecoration:'none',color:'#f7f7f7'}} href='/#id6'>Why Choose us</a></p>
             </div> : ""}
             <p onClick={()=> setui6(true)}>Active Clients</p>
-            {ui6 ?   <a onClick={()=> window.speechSynthesis.cancel()} target='_blank' href='https://www.117securityforce.com' style={{textDecoration:'none',color:'#2776EA'}}>https://www.117securityfroce.com</a> : ""}
+            {ui6 ?   <a onClick={()=> window.speechSynthesis.cancel()} target='_blank' href='https://www.117securityforce.com' style={{textDecoration:'none',color:'#f7f7f7'}}>https://www.117securityfroce.com</a> : ""}
             <br/>
             <p onClick={()=> setuis7(true)}>Services</p>
-            {uis7 ? <div> <Link to={"/Web-devlopement"}>
+            {uis7 ? <div className='bg'> <Link to={"/Web-devlopement"}>
                   <p onClick={()=> window.speechSynthesis.cancel()}>Web development</p>
                </Link>
+               <br/>
                <Link to={"/mobile-development"}>
                 <p onClick={()=> window.speechSynthesis.cancel()}>Mobile app development</p>
                 </Link>    
+                <br/>
                 <Link to={"/ecommerce"}>
                    <p onClick={()=> window.speechSynthesis.cancel()}>E-commerce</p>
                  </Link>        

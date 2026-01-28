@@ -19,7 +19,7 @@ const Footer = () => {
            <p style={{display:'flex',alignItems:'center',columnGap:10}}><FaInternetExplorer/> www.deeshix.com</p>
         </div>
         <div>
-            <h2>@2026 @copy rights www.deeshix.com</h2>
+            <h2>© copy rights reserved 2026 www.deeshix.com</h2>
         </div>
     </footer>
     </>

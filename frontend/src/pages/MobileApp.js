@@ -6,9 +6,11 @@ const MobileApp = () => {
   return (
     <div style={{marginTop:250}}>
         <h1 className='text-5xl text-center' style={{color:'#41C1BA'}}>Mobile App development</h1>
+        <br/>
+        <br/>
+        <img src={image} width={300} height={300} style={{borderRadius:500}} className='image9'/>
     <div style={{display:'flex', alignItems:'center', justifyContent:'center', columnGap:80}}>
-        <img src={image} width={300} height={300} style={{borderRadius:500}}/>
-        <p style={{width:500, color:'#f7f7f7'}}>Deeshix Technology provides end-to-end mobile app development services to help businesses transform their ideas into powerful digital experiences. We design and develop secure, high-performance, and user-friendly mobile applications for both Android and iOS platforms. By leveraging the latest technologies and industry best practices, our team delivers scalable mobile solutions that enhance user engagement, streamline operations, and support long-term business growth.</p>
+        <p style={{color:'#f7f7f7'}}>Deeshix Technology provides end-to-end mobile app development services to help businesses transform their ideas into powerful digital experiences. We design and develop secure, high-performance, and user-friendly mobile applications for both Android and iOS platforms. By leveraging the latest technologies and industry best practices, our team delivers scalable mobile solutions that enhance user engagement, streamline operations, and support long-term business growth.</p>
     </div>
 <div>
     <br></br>
@@ -17,7 +19,7 @@ const MobileApp = () => {
     <center>
         <h1 className='text-3xl fgt'>Industries We Serve</h1>
         <br/>
-        <p style={{fontSize:18, width:700, color:'#f7f7f7'}}>Deeshix Technology serves a wide range of industries by delivering tailored digital solutions that address unique business challenges. We work with clients across sectors such as :</p>
+        <p style={{fontSize:18, color:'#f7f7f7'}}>Deeshix Technology serves a wide range of industries by delivering tailored digital solutions that address unique business challenges. We work with clients across sectors such as :</p>
       <br/>
       <br/>
       <br/>
