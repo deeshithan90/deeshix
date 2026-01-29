@@ -10,7 +10,7 @@ const MobileApp = () => {
         <br/>
         <img src={image} width={300} height={300} style={{borderRadius:500}} className='image9'/>
     <div style={{display:'flex', alignItems:'center', justifyContent:'center', columnGap:80}}>
-        <p style={{color:'#f7f7f7'}}>Deeshix Technology provides end-to-end mobile app development services to help businesses transform their ideas into powerful digital experiences. We design and develop secure, high-performance, and user-friendly mobile applications for both Android and iOS platforms. By leveraging the latest technologies and industry best practices, our team delivers scalable mobile solutions that enhance user engagement, streamline operations, and support long-term business growth.</p>
+        <p style={{color:'#f7f7f7', padding:20}}>Deeshix Technology provides end-to-end mobile app development services to help businesses transform their ideas into powerful digital experiences. We design and develop secure, high-performance, and user-friendly mobile applications for both Android and iOS platforms. By leveraging the latest technologies and industry best practices, our team delivers scalable mobile solutions that enhance user engagement, streamline operations, and support long-term business growth.</p>
     </div>
 <div>
     <br></br>
@@ -24,7 +24,7 @@ const MobileApp = () => {
       <br/>
       <br/>
   </center>
-  <div style={{display:'flex',alignItems:'center',justifyContent:'center', columnGap:380, color:'#f7f7f7'}}>
+  <div style={{display:'flex',alignItems:'center',justifyContent:'space-around', color:'#f7f7f7'}}>
               <div>
                 <p className='text-2xl'>Health care</p>
               <br/>

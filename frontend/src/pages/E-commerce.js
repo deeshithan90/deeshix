@@ -9,8 +9,8 @@ const Ecommmerce = () => {
         <h1 className='text-4xl text-center' style={{color:'#41C1BA'}}>E-Commerce Solutions That Grow Your Business</h1>
         <br/>
     <div style={{display:'flex', alignItems:'center', justifyContent:'space-around'}}>
-        <img src={image} width={300} height={300} style={{borderRadius:500}}/>
-        <p style={{width:600, color:'#f7f7f7'}}>Take your business online with Deeshix Technology. We create custom, secure, and user-friendly e-commerce stores that attract customers and boost sales. From eye-catching designs to smooth checkout systems, mobile-ready platforms, and secure payments, we handle it all.
+        <img src={image} width={300} height={300} style={{borderRadius:500}} className='image9'/>
+        <p style={{color:'#f7f7f7', padding:20}}>Take your business online with Deeshix Technology. We create custom, secure, and user-friendly e-commerce stores that attract customers and boost sales. From eye-catching designs to smooth checkout systems, mobile-ready platforms, and secure payments, we handle it all.
 With our data-driven insights and SEO-friendly strategies, your store reaches the right audience and converts visitors into loyal customers. Partner with Ashdee Infotech and make online shopping simple, safe, and profitable for your business.
 </p>
     </div>
@@ -25,7 +25,7 @@ With our data-driven insights and SEO-friendly strategies, your store reaches th
       <br/>
       <br/>
   </center>
- <div style={{display:'flex',alignItems:'center',justifyContent:'center', columnGap:380, color:'#f7f7f7'}}>
+ <div style={{display:'flex',alignItems:'center',justifyContent:'space-around', color:'#f7f7f7'}}>
               <div>
                 <p className='text-2xl'>Online Store Development</p>
               <br/>

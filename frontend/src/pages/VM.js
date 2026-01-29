@@ -6,7 +6,7 @@ const VM = () => {
   return (
     <>
     <div style={{display:'flex',alignItems:'center',justifyContent:'center',}}>
-    <div style={{marginTop:250,display:'flex',alignItems:'center',columnGap:60}}>
+    <div className='io'>
      <div>
          <div className='sp'>
             <div>
@@ -16,7 +16,11 @@ const VM = () => {
             </div>
          </div>
      </div>
+     <br/>
+     <br/>
      <img src={logo} style={{width:200,height:200}}/>
+     <br/>
+     <br/>
      <div>
          <div className='sp'>
           <div>

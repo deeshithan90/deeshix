@@ -443,6 +443,21 @@ html {
   justify-content: space-between;
 }
 
+.io{
+  margin-top: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 60px;
+}
+
+.jit{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
 .about p{
   width: 700px;
 }
@@ -532,6 +547,25 @@ html {
     font-size: 190px;
     animation: typing 6s steps(15) infinite;
   }
+
+  .sp{
+     background-color: #41C1BA;
+  font-size: 10px;
+  width: 500px;
+  height: 500px;
+  padding: 70px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0F2632;
+  }
+  .sp{
+    width: 550px;
+  }
+  .sp h1{
+    font-size: 25px;
+  }
   .about p {
     width: auto;
   }
@@ -554,6 +588,10 @@ html {
   .f-1 {
     flex-direction: column;
     row-gap: 20px;
+  }
+
+  .io{
+    display: block;
   }
 
   .f-sub {
@@ -590,6 +628,12 @@ html {
   }
 
   .about{
+    display: block;
+  }
+
+
+
+  .jit{
     display: block;
   }
 
