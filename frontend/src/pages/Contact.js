@@ -20,7 +20,7 @@ const [sty,setsty] = useState(false)
   };
     return (
         <>
-        <div style={{ marginTop: 140, display: 'flex', alignItems: 'center', justifyContent: 'center', columnGap:50 }}>
+        <div className='op'>
             <div className="">
                 <img
                     src={robot}
@@ -30,9 +30,13 @@ const [sty,setsty] = useState(false)
                 <div>
                 </div>
             </div>
+            <br/>
+            <br/>
             <button onClick={speak} style={{ width: 100, backgroundColor: '#41C1BA', padding: 10, borderRadius: 15, border: 'none' }}>
                 contact us
             </button>
+            <br/>
+            <br/>
             <div  style={{ width: 320, height: 320, border: '#41C1BA 2px solid' }}>
                 <br/>
                 <br/>

@@ -461,6 +461,13 @@ html {
 .about p{
   width: 700px;
 }
+.op{
+  margin-top: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+}
 /* ========================= */
 /* TABLET (max-width: 992px) */
 /* ========================= */
@@ -560,6 +567,18 @@ html {
   justify-content: center;
   color: #0F2632;
   }
+  .input{
+    background-color: #0F2632;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 25px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 190px;
+    border: #41C1BA 2px solid;
+  }
   .sp{
     width: 550px;
   }
@@ -574,6 +593,9 @@ html {
 }
 .imh{
   display: none;
+}
+.op{
+   display: block;
 }
 .yu{
   display: block;

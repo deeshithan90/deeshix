@@ -226,7 +226,7 @@ const [formData, setFormData] = useState({
             <br/>
             <p onClick={()=> setuis7(true)}>Services</p>
             {uis7 ? <div className='bg'> <Link to={"/Web-devlopement"} onClick={()=> window.speechSynthesis.cancel()}>
-                  <p onClick={()=> setuisf(false)}>Web development</p>
+                  <p onClick={()=> setuisf  (false)}>Web development</p>
                </Link>
                <br/>
                <Link to={"/mobile-development"} onClick={()=> window.speechSynthesis.cancel()}>

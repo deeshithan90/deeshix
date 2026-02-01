@@ -13,6 +13,7 @@ import MobileApp from './pages/MobileApp';
 import Ecommmerce from './pages/E-commerce';
 import Contact from './pages/Contact';
 import Whatsapp from './components/Whatsapp';
+import Requests from './pages/Request';
 function App() {
   const [se,sett] = useState(false)
   return (
@@ -46,6 +47,7 @@ function App() {
                <Route path='/mobile-development' element={<MobileApp/>}/>
                <Route path='/ecommerce' element={<Ecommmerce/>}/>
                <Route path='/contact' element={<Contact/>}/>
+               <Route path='/Request' element={<Requests/>}/>
            </Routes>
 <Footer/>
        </BrowserRouter>
