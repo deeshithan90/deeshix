@@ -31,7 +31,7 @@ const OurManpower = ({setui}) => {
              </div> 
              <br/>
              <br/>
-             <div className='office-assitant'>
+             <div className='office-assitan'>
                  <img src={Office} style={{borderRadius:900, width:300, height:300}}/>
                  <br/>
                  <br/>
