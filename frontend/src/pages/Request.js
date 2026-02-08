@@ -69,6 +69,7 @@ const Requests = () => {
          <div className='ju'>
            <select name="productEnquiry" onChange={handleChange}>
              <option value="">Product enquiry</option>
+             <option value="Manpower solution">Manpower solution</option>
              <option value="Web development">Web development</option>
              <option value="Redesign Website">Redesign Website</option>
              <option value="E-commerce">E-commerce</option>

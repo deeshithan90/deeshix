@@ -14,8 +14,9 @@ import Ecommmerce from './pages/E-commerce';
 import Contact from './pages/Contact';
 import Whatsapp from './components/Whatsapp';
 import Requests from './pages/Request';
+import OurManpower from './pages/OurManpower';
 function App() {
-  const [se,sett] = useState(false)
+  const [ui,setui] = useState(false)
   return (
     <>
 <BrowserRouter>
@@ -35,10 +36,10 @@ function App() {
     },
   }}
 />
-<Navbar sett={sett} se={se}/>
+<Navbar ui={ui} setui={setui} />
 <Whatsapp/>
            <Routes>
-               <Route path='/' element={<Home sett={sett} se={se}/>}/>
+               <Route path='/' element={<Home />}/>
                <Route path='/technology' element={<Technoloy/>}/>
                <Route path='/industries' element={<Inderste/>}/>
                <Route path='/Vision-mission' element={<VM/>}/>
@@ -48,6 +49,7 @@ function App() {
                <Route path='/ecommerce' element={<Ecommmerce/>}/>
                <Route path='/contact' element={<Contact/>}/>
                <Route path='/Request' element={<Requests/>}/>
+               <Route path='/Manpower' element={<OurManpower setui={setui}/>}/>
            </Routes>
 <Footer/>
        </BrowserRouter>

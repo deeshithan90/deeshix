@@ -6,12 +6,13 @@ import { FaAccusoft, FaBars, FaHome, FaLightbulb, FaMailBulk, FaPhone, FaUser } 
 import {FaXmark} from 'react-icons/fa6'
 import {toast} from 'react-hot-toast'
 
-const Navbar = ({sett,se}) => {
+const Navbar = ({ui,setui}) => {
 
    const [uis,setuis] = useState(false)
    const [uisff,setuisf] = useState(false)
    const [uis7,setuis7] = useState(false)
    const [ui6,setui6] = useState(false)
+   const [se,sett] = useState(false)
 
 const [formData, setFormData] = useState({
   name: "",
@@ -56,7 +57,6 @@ const [formData, setFormData] = useState({
 
    const [textui,settextui] = useState(false)
    const [textuis,settextuis] = useState(false)
-   const [ui,setui] = useState(false)
    function click(){
       sett(true)
    }
@@ -132,6 +132,9 @@ const [formData, setFormData] = useState({
          <div>
           <p onMouseOver={lci}>Services</p>
           {textuis ? <div className='id-div' onMouseLeave={lici2}>
+            <Link to={"/Manpower"}>
+                 <p onClick={()=> window.speechSynthesis.cancel()}>Manpower solution</p>
+            </Link>
               <Link to={"/Web-devlopement"}>
                   <p onClick={()=> window.speechSynthesis.cancel()}>Web development</p>
                </Link>
@@ -170,6 +173,7 @@ const [formData, setFormData] = useState({
   <div className='ju'>
     <select name="productEnquiry" onChange={handleChange}>
       <option value="">Product enquiry</option>
+      <option value="Manpower solution">Manpower solution</option>
       <option value="Web development">Web development</option>
       <option value="Redesign Website">Redesign Website</option>
       <option value="E-commerce">E-commerce</option>
@@ -225,7 +229,12 @@ const [formData, setFormData] = useState({
             {ui6 ?   <a onClick={()=> window.speechSynthesis.cancel()} target='_blank' href='https://www.117securityforce.com' style={{textDecoration:'none',color:'#f7f7f7'}}>https://www.117securityfroce.com</a> : ""}
             <br/>
             <p onClick={()=> setuis7(true)}>Services</p>
-            {uis7 ? <div className='bg'> <Link to={"/Web-devlopement"} onClick={()=> window.speechSynthesis.cancel()}>
+            {uis7 ? <div className='bg'> 
+              <Link to={"/Manpower"} onClick={()=> window.speechSynthesis.cancel()}>
+                  <p onClick={()=> setuisf  (false)}>Manpower solution</p>
+               </Link>
+               <br/>
+              <Link to={"/Web-devlopement"} onClick={()=> window.speechSynthesis.cancel()}>
                   <p onClick={()=> setuisf  (false)}>Web development</p>
                </Link>
                <br/>
