@@ -9,28 +9,28 @@ const BarndsValue = () => {
               <div>
                 <h1 className='text-2xl' style={{color:'#41C1BA'}}>Quality-Driven Development</h1>
                 <br></br>
-                <p style={{color:'#f7f7f7'}}>We believe in building websites that are fast, secure, scalable, and visually engaging. Every project is crafted with clean code, modern technologies, and attention to detail.</p>
+                <p style={{color:'black'}}>We believe in building websites that are fast, secure, scalable, and visually engaging. Every project is crafted with clean code, modern technologies, and attention to detail.</p>
               </div>
               <br></br>
               <br></br>
               <div>
                 <h1 className='text-2xl' style={{color:'#41C1BA'}}>Innovation & Modern Technology</h1>
                 <br></br>
-                <p style={{color:'#f7f7f7'}}>We stay ahead of trends and continuously adopt the latest web technologies to create future-ready digital experiences.</p>
+                <p style={{color:'black'}}>We stay ahead of trends and continuously adopt the latest web technologies to create future-ready digital experiences.</p>
               </div>
               <br></br>
               <br></br>
               <div>
                   <h1 className='text-2xl' style={{color:'#41C1BA'}}>Performance & Reliability</h1>
                   <br></br>
-                  <p style={{color:'#f7f7f7'}}>We develop websites that load fast, work smoothly, and perform consistently across all devices and browsers.</p>
+                  <p style={{color:'black'}}>We develop websites that load fast, work smoothly, and perform consistently across all devices and browsers.</p>
               </div>
               <br></br>
               <br></br>
               <div>
                 <h1 className='text-2xl' style={{color:'#41C1BA'}}>Continuous Support</h1>
                 <br/>
-                <p  style={{color:'#f7f7f7'}}>Our relationship doesn’t end at launch. We provide ongoing support, maintenance, and improvements to ensure your digital presence stays strong.</p>
+                <p  style={{color:'black'}}>Our relationship doesn’t end at launch. We provide ongoing support, maintenance, and improvements to ensure your digital presence stays strong.</p>
               </div>
           </div>
           <div>

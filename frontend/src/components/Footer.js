@@ -9,9 +9,9 @@ const Footer = () => {
     <br></br>
     <div style={{borderTop:'black 2px solid'}}></div>
     <br></br>
-    <footer className='footer' style={{color:'#f7f7f7'}}>
+    <footer className='footer' style={{color:'black'}}>
         <div>
-            <img src={image5} width={100} height={200} style={{borderRadius:600, width:100,height:100}}/>
+            <img src={image5} width={100} height={200} style={{borderRadius:600, width:300,height:200}}/>
         </div>
         <div>
            <p style={{display:'flex',alignItems:'center',columnGap:10}}><FaMailBulk/> : deeshiss@deeshix.com</p>

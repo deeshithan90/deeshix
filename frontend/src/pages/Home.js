@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import robot from "../images/Robo.jpg";
+import robot from "../images/Robo.png";
 import WhyChooseus from "../components/WhyChoose us";
 import Callus from "../components/Call-us";
 import { FaMicrophone } from "react-icons/fa";
 import storage from "../db/Storage";
 import Answerstorage from "../db/answerStorage";
+import BannerVideo from "../components/Banner";
 
 const Home = ({sett}) => {
   const [isTalking, setIsTalking] = useState(false);
@@ -111,15 +112,24 @@ function clickmen(){
 
   return (
     <>
-    <br/>
-    <br/>
-    <br/>
-    <div className="container">
+    <video src="/laser.mp4" muted autoPlay loop playsInline className="w-full mt-40">
+</video>
+<div className="mt-10 p-10">
+    <h1 className="text-4xl underline">About deeshiX Technology</h1>
+    <p className="mt-10 text-2xl">
+       DeeshiX- Afforedable Web Development services | Deeshix offer affordable webdevelopment services including responsive website design and custom websites for all small scale and startup business. 
+    </p>
+    <p className="text-3xl mt-10">AFFORDABLE & CREATIVE WEB DEVELOPEMENT SERVICES</p>
+    <p className="mt-3">
+      deeshiX Your trusted partner for professional modern, responsive, and user friendly web developer in chennai tamilnadu.Deeshix goal to help to all small business, and startups create very strong online presence to grow your busiuness with an affordable web solutions. We are specialized in Custom website, portfolio website creation, Website redesign services , SEO Friendly structure & responsive website design. The technology which we use Html, Css, Java script, Node.js.React native, MongoDb, Python,Flutter and Tailwind.
+    </p>
+</div>
+    <div className="container mb-20 z-0">
       <img
         src={robot}
         alt="Robot"
         className={`robot ${isTalking ? "walking" : ""}`}
-        style={{width:300,height:300, border:'#41C1BA 2px solid'}}
+        style={{width:300,height:300,}}
       />
       <div>
       <button onClick={speak} className="speak-btn">
@@ -130,9 +140,6 @@ function clickmen(){
       <button onClick={speak2} className="speak-btn">
          Founder voice
       </button>
-      <br/>
-      <br></br>
-      <button className="speak-btn" onClick={clickmen}>{mice ? 'Ask Deeshix' : 'ask again'}</button>
       </div>
     </div>
 <br></br>

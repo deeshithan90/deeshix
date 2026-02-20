@@ -97,9 +97,9 @@ const [formData, setFormData] = useState({
    }
   return (
    <>
-    <nav className='navbar'>
+    <nav className='navbar z-50'>
        <div>
-          <img src={logo} width={150} height={150} style={{borderRadius:265}}/>
+          <img src={logo} width={250} height={250} style={{borderRadius:265}}/>
        </div>
        <div className='nav-sub'>
           <Link to={"/"}>
@@ -120,21 +120,18 @@ const [formData, setFormData] = useState({
                 <Link to={"/Vision-mission"}>
                 <p onClick={()=> window.speechSynthesis.cancel()}> Vision and mission</p>
                 </Link>
-                <p><a onClick={()=> window.speechSynthesis.cancel()} style={{textDecoration:'none',color:'#f7f7f7'}} href='/#id6'>Why Choose us</a></p>
+                <p><a onClick={()=> window.speechSynthesis.cancel()} style={{textDecoration:'none',color:'black'}} href='/#id6'>Why Choose us</a></p>
             </div> : <div></div>}
           </div>
           <div>
              <p onMouseOver={click2}>Active clients</p>
              {textui ? <div className='id-div' style={{padding:15}} onMouseLeave={click5}>
-                <a onClick={()=> window.speechSynthesis.cancel()} target='_blank' href='https://www.117securityforce.com' style={{textDecoration:'none',color:'#f7f7f7'}}>https://www.117securityfroce.com</a>
+                <a onClick={()=> window.speechSynthesis.cancel()} target='_blank' href='https://www.117securityforce.com' style={{textDecoration:'none',color:'black'}}>https://www.117securityfroce.com</a>
             </div> : <div></div>}
          </div>
          <div>
           <p onMouseOver={lci}>Services</p>
           {textuis ? <div className='id-div' onMouseLeave={lici2}>
-            <Link to={"/Manpower"}>
-                 <p onClick={()=> window.speechSynthesis.cancel()}>Manpower solution</p>
-            </Link>
               <Link to={"/Web-devlopement"}>
                   <p onClick={()=> window.speechSynthesis.cancel()}>Web development</p>
                </Link>
@@ -193,7 +190,7 @@ const [formData, setFormData] = useState({
  : <div></div>}
          </div>
        <div>
-          <p className='f7' onClick={click90} style={{fontSize:30,color:'white'}}><FaBars/></p>
+          <p className='f7' onClick={click90} style={{fontSize:30,color:'black'}}><FaBars/></p>
        </div>
     </nav>
     {uisff ? <div className='side-Navbar'>
@@ -230,9 +227,6 @@ const [formData, setFormData] = useState({
             <br/>
             <p onClick={()=> setuis7(true)}>Services</p>
             {uis7 ? <div className='bg'> 
-              <Link to={"/Manpower"} onClick={()=> window.speechSynthesis.cancel()}>
-                  <p onClick={()=> setuisf  (false)}>Manpower solution</p>
-               </Link>
                <br/>
               <Link to={"/Web-devlopement"} onClick={()=> window.speechSynthesis.cancel()}>
                   <p onClick={()=> setuisf  (false)}>Web development</p>

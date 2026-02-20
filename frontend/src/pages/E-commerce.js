@@ -10,7 +10,7 @@ const Ecommmerce = () => {
         <br/>
     <div style={{display:'flex', alignItems:'center', justifyContent:'space-around'}}>
         <img src={image} width={300} height={300} style={{borderRadius:500}} className='image9'/>
-        <p style={{color:'#f7f7f7', padding:20}}>Take your business online with Deeshix Technology. We create custom, secure, and user-friendly e-commerce stores that attract customers and boost sales. From eye-catching designs to smooth checkout systems, mobile-ready platforms, and secure payments, we handle it all.
+        <p style={{color:'black', padding:20}}>Take your business online with Deeshix Technology. We create custom, secure, and user-friendly e-commerce stores that attract customers and boost sales. From eye-catching designs to smooth checkout systems, mobile-ready platforms, and secure payments, we handle it all.
 With our data-driven insights and SEO-friendly strategies, your store reaches the right audience and converts visitors into loyal customers. Partner with Ashdee Infotech and make online shopping simple, safe, and profitable for your business.
 </p>
     </div>
@@ -25,7 +25,7 @@ With our data-driven insights and SEO-friendly strategies, your store reaches th
       <br/>
       <br/>
   </center>
- <div style={{display:'flex',alignItems:'center',justifyContent:'space-around', color:'#f7f7f7'}}>
+ <div style={{display:'flex',alignItems:'center',justifyContent:'space-around', color:'black'}}>
               <div>
                 <p className='text-2xl'>Online Store Development</p>
               <br/>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import robot from "../images/Robo.jpg";
+import robot from "../images/Robo.png";
 import { FaMailBulk, FaInternetExplorer, FaPhone, FaAddressCard } from 'react-icons/fa';
 import Callus from '../components/Call-us';
 
@@ -25,7 +25,7 @@ const [sty,setsty] = useState(false)
                 <img
                     src={robot}
                     alt="Robot"
-                    style={{ width: 320, height: 320, border: '#41C1BA 2px solid' }}
+                    style={{ width: 320, height: 320,}}
                 />
                 <div>
                 </div>
@@ -37,15 +37,15 @@ const [sty,setsty] = useState(false)
             </button>
             <br/>
             <br/>
-            <div  style={{ width: 320, height: 320, border: '#41C1BA 2px solid' }}>
+            <div  style={{ width: 320, height: 320,}}>
                 <br/>
                 <br/>
-                <h1 className={`text-2xl text-white ${sty? "typings" : ""}`}>DEESHIX technology</h1>
+                <h1 className={`text-2xl text-black ${sty? "typings" : ""}`}>DEESHIX technology</h1>
                 <br/>
-                <p className='' style={{ display: 'flex', textAlign:'center', alignItems: 'center', columnGap: 10, color:'#f7f7f7', }}><FaMailBulk /> : deeshiss@deeshix.com</p>
-                <p className='' style={{ display: 'flex', alignItems: 'center', columnGap: 10,color:'#f7f7f7', }}><FaPhone /> : (+91) 8148181929</p>
-                <p className='' style={{ display: 'flex', alignItems: 'center', columnGap: 10 ,color:'#f7f7f7'}}><FaInternetExplorer /> : www.deeshix.com</p>
-                <p className='' style={{ display: 'flex', alignItems: 'center', columnGap: 10 ,color:'#f7f7f7',fontSize:15}}><FaAddressCard/> : Madambakam,chennai,TamilNadu, India 600126</p>
+                <p className='' style={{ display: 'flex', textAlign:'center', alignItems: 'center', columnGap: 10, color:'black', }}><FaMailBulk /> : deeshiss@deeshix.com</p>
+                <p className='' style={{ display: 'flex', alignItems: 'center', columnGap: 10,color:'black', }}><FaPhone /> : (+91) 8148181929</p>
+                <p className='' style={{ display: 'flex', alignItems: 'center', columnGap: 10 ,color:'black'}}><FaInternetExplorer /> : www.deeshix.com</p>
+                <p className='' style={{ display: 'flex', alignItems: 'center', columnGap: 10 ,color:'black',fontSize:15}}><FaAddressCard/> : Madambakam,chennai,TamilNadu, India 600126</p>
             </div>
         </div>
         <br/>

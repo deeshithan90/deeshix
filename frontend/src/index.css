@@ -9,19 +9,24 @@ body {
    justify-content: space-between;
    padding: 10px;
    position: fixed;
-   top: -30px;
+   top: 0px;
    width: 100%;
-   background-color: #0F2632;
+   background-color: white;
 }
 .nav-sub{
    display: flex;
    align-items: center;
    column-gap: 50px;
 }
+.flexs{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 .nav-sub p{
   padding: 10px;
   transition: 2s;
-  color: #f7f7f7;
+  color: black;
   cursor: pointer;
 }
 
@@ -29,6 +34,31 @@ body {
   background-color: #41C1BA;
   border-radius: 25px;
   color: black;
+}
+/* BannerVideo.css */
+
+.banner-container {
+  margin-top: 150px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.banner-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
 }
 
 .navbar button{
@@ -40,7 +70,7 @@ body {
     border-radius: 25px;
     border: none;
     transition: 1s;
-    color: #f2f2f2;
+    color: black;
 }
 
 .navbar button:hover{
@@ -192,16 +222,14 @@ body {
 .id-div{
   position: absolute;
   padding: 10px;
-  color: black;
+  color: blue;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  background-color: #0F2632;
+  background-color: white;
   border-radius: 25px;
 }
 
-.id-div p:hover{
-   background-color: black;
-   color: white;
-   border-radius: 17px;
+.id-div p{
+   
 }
 
 .typing {
@@ -435,6 +463,7 @@ html {
    left: 0px;
    color: #0F2632;
    display: inline-block;
+   z-index: 80;
 }
 
 .about{
@@ -567,6 +596,9 @@ html {
 
   .f6{
     display: none;
+  }
+  .flexs{
+    display: block;
   }
   .f5{
     display: block;

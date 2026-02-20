@@ -14,7 +14,6 @@ import Ecommmerce from './pages/E-commerce';
 import Contact from './pages/Contact';
 import Whatsapp from './components/Whatsapp';
 import Requests from './pages/Request';
-import OurManpower from './pages/OurManpower';
 function App() {
   const [ui,setui] = useState(false)
   return (
@@ -49,7 +48,6 @@ function App() {
                <Route path='/ecommerce' element={<Ecommmerce/>}/>
                <Route path='/contact' element={<Contact/>}/>
                <Route path='/Request' element={<Requests/>}/>
-               <Route path='/Manpower' element={<OurManpower setui={setui}/>}/>
            </Routes>
 <Footer/>
        </BrowserRouter>
