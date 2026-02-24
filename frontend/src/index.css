@@ -471,7 +471,13 @@ html {
   align-items: center;
   justify-content: space-between;
 }
-
+.grids {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr; /* 3 equal columns */
+  gap: 70px; /* space between items */
+  padding: 40px;
+  font-size: 20px;
+}
 .io{
   margin-top: 250px;
   display: flex;
@@ -584,7 +590,10 @@ html {
   display: block;
 }
 
-
+.ghs{
+  display: flex;
+  justify-content: space-between;
+}
 
 /* ========================= */
 /* MOBILE (max-width: 600px) */
@@ -592,6 +601,15 @@ html {
 @media (max-width: 700px) {
   .security-guard{
      display: block;   
+  }
+
+.ghs{
+  display: block;
+}
+
+
+  .grids{
+     display: block;
   }
 
   .f6{

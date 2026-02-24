@@ -52,12 +52,13 @@ app.post('/api/book', async (req, res) => {
     }
 })
 
-
 const __dirnames = path.resolve()
-app.use(express.static(path.join(__dirnames,"frontend/build")))
-app.use("/",(req,res)=> {
-    res.sendFile(path.resolve(__dirnames,"frontend,","build","index.html"))
-})
+
+app.use(express.static(path.join(__dirnames, "frontend/build")));
+
+app.use((req, res) => {
+  res.sendFile(path.join(__dirnames, "frontend/build", "index.html"));
+});
 
 app.listen(5000, () => {
     console.log(`Server is running on port 5000`)
