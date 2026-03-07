@@ -40,12 +40,13 @@ const [sty,setsty] = useState(false)
             <div  style={{ width: 320, height: 320,}}>
                 <br/>
                 <br/>
-                <h1 className={`text-2xl text-black ${sty? "typings" : ""}`}>DEESHIX technology</h1>
+                <h1 className={`text-2xl clor ${sty? "typings" : ""}`}>DEESHIX technology</h1>
                 <br/>
-                <p className='' style={{ display: 'flex', textAlign:'center', alignItems: 'center', columnGap: 10, color:'black', }}><FaMailBulk /> : deeshiss@deeshix.com</p>
-                <p className='' style={{ display: 'flex', alignItems: 'center', columnGap: 10,color:'black', }}><FaPhone /> : (+91) 8148181929</p>
-                <p className='' style={{ display: 'flex', alignItems: 'center', columnGap: 10 ,color:'black'}}><FaInternetExplorer /> : www.deeshix.com</p>
-                <p className='' style={{ display: 'flex', alignItems: 'center', columnGap: 10 ,color:'black',fontSize:15}}><FaAddressCard/> : Madambakam,chennai,TamilNadu, India 600126</p>
+                
+                <p style={{ display: 'flex', textAlign:'center', alignItems: 'center', columnGap: 10, color:'#f7f7f7', }}><FaMailBulk /> : deeshiss@deeshix.com</p>
+                <p className='' style={{ display: 'flex', alignItems: 'center', columnGap: 10,color:'#f7f7f7', }}><FaPhone /> : (+91) 8148181929</p>
+                <p className='' style={{ display: 'flex', alignItems: 'center', columnGap: 10 ,color:'#f7f7f7'}}><FaInternetExplorer /> : www.deeshix.com</p>
+                <p className='' style={{ display: 'flex', alignItems: 'center', columnGap: 10 ,color:'#f7f7f7',fontSize:15}}><FaAddressCard/> : Madambakam,chennai,TamilNadu, India 600126</p>
             </div>
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.1535124521765!2d80.167437083196!3d12.897848682679005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525f206106d34d%3A0xa715941f4a087ae3!2sDeeshix%20technology!5e0!3m2!1sen!2sin!4v1771946446183!5m2!1sen!2sin" width="600" height="450" style={{border:0}} loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='w-full'></iframe>

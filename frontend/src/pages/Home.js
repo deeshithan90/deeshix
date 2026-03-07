@@ -116,25 +116,25 @@ const Home = ({ sett }) => {
   return (
     <>
       <div>
-        <img src={logobg} className="w-full  mt-40">
+        <img src={logobg} className="w-full bg-black p-3 mtsss">
 
         </img>
       </div>
-      <center className="mt-10 w-full p-10 bg-black text-white">
+      <center className="mt-0 w-full p-10 bg-black text-white">
         <p className="text-3xl text-left">
-          <BiChat color="white" size={190} />
+          <BiChat color="#CCFF00" size={190} />
         </p>
-        <h1 className="text-5xl mt-5 mb-10 text-left">Hi, I’m Deeshithan Sathish
+        <h1 className="text-5xl mt-5 mb-10 text-left clor">Hi, I’m Deeshithan Sathish
           Young Full-Stack (MERN) Developer & Future AI Engineer
           Chennai, Tamil Nadu, India 🇮🇳
         </h1>
-        <p className="text-3xl mt-5 mb-5 text-left">
+        <p className="text-3xl mt-5 mb-5 text-left k">
           I build modern, responsive, and scalable web and mobile applications using industry-standard technologies.
           I have successfully delivered real client portfolio projects independently and continuously expand my skills into AI-powered applications.
         </p>
       </center>
       <div className="mt-10 p-10">
-        <h1 className="text-4xl underline font-blod">About Me</h1>
+        <h1 className="text-4xl underline font-blod clor">About Me</h1>
         <p className="mt-10 text-2xl font-bold text-left">
           I am a passionate Full-Stack Developer specializing in the MERN Stack (MongoDB, Express.js, React.js, Node.js).
           With hands-on experience delivering client projects, I focus on writing clean, secure, and efficient code while building user-friendly digital solutions.

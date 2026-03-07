@@ -99,7 +99,7 @@ const [formData, setFormData] = useState({
    <>
     <nav className='navbar z-50'>
        <div>
-          <img src={logo} width={250} height={250} style={{borderRadius:265}}/>
+          <img src={logo} className='w-[140px] h-[180px]' style={{borderRadius:265}}/>
        </div>
        <div className='nav-sub'>
           <Link to={"/"}>
@@ -153,17 +153,17 @@ const [formData, setFormData] = useState({
   <p style={{textAlign:'right', color:'white'}} onClick={x}><FaXmark/></p>
 <br/>
   <div className='ju'>
-    <FaUser/>
+    <FaUser color='black'/>
     <input name="name" placeholder="Name" onChange={handleChange} />
   </div>
 <br/>
   <div className='ju'>
-    <FaMailBulk/>
+    <FaMailBulk color='black'/>
     <input name="email" type="email" placeholder="Email" onChange={handleChange} />
   </div>
 <br/>
   <div className='ju'>
-    <FaPhone/>
+    <FaPhone color='black'/>
     <input name="contact" placeholder="Contact Number" onChange={handleChange} />
   </div>
 <br/>
@@ -205,19 +205,19 @@ const [formData, setFormData] = useState({
             <br/>
             {uis ? <div className='bg'>
                <Link to={"/About"} onClick={()=> window.speechSynthesis.cancel()}>
-                    <p onClick={()=> setuisf(false)}>About us</p>
+                    <p style={{color:'black'}} onClick={()=> setuisf(false)}>About us</p>
                 </Link>
                 <br/>
                <Link to={"/technology"} onClick={()=> window.speechSynthesis.cancel()}>
-                  <p onClick={()=> setuisf(false)}>Technologies We Use</p>
+                  <p style={{color:'black'}} onClick={()=> setuisf(false)}>Technologies We Use</p>
                </Link>
                <br/>
                 <Link to={"/industries"} onClick={()=> window.speechSynthesis.cancel()}>
-                   <p onClick={()=> setuisf(false)}>Industries We Serve</p>
+                   <p style={{color:'black'}} onClick={()=> setuisf(false)}>Industries We Serve</p>
                 </Link>
                 <br/>
                 <Link to={"/Vision-mission"} onClick={()=> window.speechSynthesis.cancel()}>
-                <p onClick={()=> setuisf(false)}> Vision and mission</p>
+                <p style={{color:'black'}} onClick={()=> setuisf(false)}> Vision and mission</p>
                 </Link>
                 <br/>
                 <p><a onClick={()=> window.speechSynthesis.cancel()} style={{textDecoration:'none',color:'#f7f7f7'}} href='/#id6'>Why Choose us</a></p>
@@ -229,24 +229,24 @@ const [formData, setFormData] = useState({
             {uis7 ? <div className='bg'> 
                <br/>
               <Link to={"/Web-devlopement"} onClick={()=> window.speechSynthesis.cancel()}>
-                  <p onClick={()=> setuisf  (false)}>Web development</p>
+                  <p style={{color:'black'}} onClick={()=> setuisf  (false)}>Web development</p>
                </Link>
                <br/>
                <Link to={"/mobile-development"} onClick={()=> window.speechSynthesis.cancel()}>
-                <p onClick={()=> setuisf(false)}>Mobile app development</p>
+                <p style={{color:'black'}} onClick={()=> setuisf(false)}>Mobile app development</p>
                 </Link>    
                 <br/>
                 <Link to={"/ecommerce"} onClick={()=> window.speechSynthesis.cancel()}>
-                   <p onClick={()=> setuisf(false)}>E-commerce</p>
+                   <p style={{color:'black'}} onClick={()=> setuisf(false)}>E-commerce</p>
                  </Link>        
                 </div>: <div></div>}
                 <br/>
             <Link to={"/contact"} onClick={()=> window.speechSynthesis.cancel()}>
-            <p onClick={()=> setuisf(false)}>Conact</p>
+            <p style={{color:'black'}} onClick={()=> setuisf(false)}>Conact</p>
             </Link>
             <br/>
             <Link to={"/Request"} onClick={()=> window.speechSynthesis.cancel()}>
-            <p onClick={()=> setuisf(false)}>Request PortFolio</p>
+            <p style={{color:'black'}} onClick={()=> setuisf(false)}>Request PortFolio</p>
             </Link>
         </div>
     </div>:""}

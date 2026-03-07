@@ -11,7 +11,7 @@ body {
    position: fixed;
    top: 0px;
    width: 100%;
-   background-color: white;
+   background-color: black;
 }
 .nav-sub{
    display: flex;
@@ -26,14 +26,14 @@ body {
 .nav-sub p{
   padding: 10px;
   transition: 2s;
-  color: black;
+  color:#CCFF00;
   cursor: pointer;
 }
 
 .nav-sub p:hover{
   background-color: #41C1BA;
   border-radius: 25px;
-  color: black;
+  color: #CCFF00;
 }
 /* BannerVideo.css */
 
@@ -70,11 +70,19 @@ body {
     border-radius: 25px;
     border: none;
     transition: 1s;
-    color: black;
+    color: #CCFF00;
 }
 
-.navbar button:hover{
-  
+.clor{
+  color: #BF00FF;
+}
+
+.k{
+  color:  #F8FFFF;
+}
+
+.mtsss{
+  margin-top: 200px;
 }
 
 .l{
@@ -224,12 +232,12 @@ body {
   padding: 10px;
   color: blue;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  background-color: white;
+  background-color: black;
   border-radius: 25px;
 }
 
-.id-div p{
-   
+.id-div p:hover{
+   background-color: black;
 }
 
 .typing {
@@ -292,7 +300,7 @@ body {
 .marqueezz{
    width: 100%;
   overflow: hidden;
-  background: #41C1BA;  
+  background: #CCFF00;  
   padding: 10px;
 }
 .marqueez-content {
@@ -449,7 +457,7 @@ html {
 }
 .ju select {
    border: none;
-   background-color: whitesmoke;
+   background-color: black;
    outline: none;
    width: 250px;
    padding: 10px;
@@ -569,6 +577,7 @@ html {
   padding: 20px;
 }
 
+
 .man{
   display: flex;
   align-items: center;
@@ -576,6 +585,7 @@ html {
   background-color: white;
   padding: 20px;
 }
+
 
 .paras{
   width: 400px;
