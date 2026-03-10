@@ -116,32 +116,7 @@ const Home = ({ sett }) => {
   return (
     <>
       <div>
-        <img src={logobg} className="w-full bg-black p-3 mtsss">
-
-        </img>
-      </div>
-      <center className="mt-0 w-full p-10 bg-black text-white">
-        <p className="text-3xl text-left">
-          <BiChat color="#CCFF00" size={190} />
-        </p>
-        <h1 className="text-5xl mt-5 mb-10 text-left clor">Hi, I’m Deeshithan Sathish
-          Young Full-Stack (MERN) Developer & Future AI Engineer
-          Chennai, Tamil Nadu, India 🇮🇳
-        </h1>
-        <p className="text-3xl mt-5 mb-5 text-left k">
-          I build modern, responsive, and scalable web and mobile applications using industry-standard technologies.
-          I have successfully delivered real client portfolio projects independently and continuously expand my skills into AI-powered applications.
-        </p>
-      </center>
-      <div className="mt-10 p-10">
-        <h1 className="text-4xl underline font-blod clor">About Me</h1>
-        <p className="mt-10 text-2xl font-bold text-left">
-          I am a passionate Full-Stack Developer specializing in the MERN Stack (MongoDB, Express.js, React.js, Node.js).
-          With hands-on experience delivering client projects, I focus on writing clean, secure, and efficient code while building user-friendly digital solutions.
-          Currently, I am expanding my knowledge into Artificial Intelligence to build intelligent web and mobile applications.
-        </p>
-      </div>
-      <div className="container mb-20 z-0">
+        <div className="container mb-0 z-0 flexss mt-0">
         <img
           src={robot}
           alt="Robot"
@@ -156,7 +131,11 @@ const Home = ({ sett }) => {
           <br></br>
           <button onClick={speak2} className="speak-btn">
             Founder voice
-          </button>
+          </button> 
+        </div>
+        <div className="mb-0 mt-10 w-full">
+            <h1 className="text-4xl text-center p-0">Meet Deeshithan Sathish - 12 years Old self Taught MERN stack developer</h1>
+            <h2 className="text-2xl text-center p-0 mt-10">specialized in MongoDB, Express.js , React.js Node.js Mongoose ODM TanstackQuery , JWT , dotenv, cookieparser, Java script Type script , css , html, tailwindcss python,  Django</h2>
         </div>
       </div>
       <br></br>
@@ -177,6 +156,28 @@ const Home = ({ sett }) => {
         <p>
           Hi, I’m Deeshithan Sathish, a passionate young developer focused on building modern, high-quality digital solutions. While many people my age consume technology, I choose to create it. I am a self-taught developer who transformed learning time into real-world building by studying and following industry-leading engineers. I specialize in HTML, CSS, JavaScript, Python, and Node.js, with hands-on experience in frameworks and technologies such as React, React Native, Express, MongoDB, Flutter, and Django. My work includes web development, e-commerce platforms, mobile application development, and SEO-focused solutions. I have completed full-stack development projects and successfully deployed them for clients. In January 2026, I founded Deeshix to support businesses with custom-built, reliable, and scalable digital products, ensuring long-term growth through clean code, innovation, and high professional standards.</p>
       </div> : <div></div>}
+      </div>
+      <center className="mt-0 w-full p-10 bg-black text-white">
+        <p className="text-3xl text-left">
+          <BiChat color="#CCFF00" size={100} />
+        </p>
+        <h1 className="text-5xl mt-5 mb-10  text-center">Hi, I’m Deeshithan Sathish
+          Young Full-Stack (MERN) Developer & Future AI Engineer
+          Chennai, Tamil Nadu, India 🇮🇳
+        </h1>
+        <p className="text-2xl mt-5 mb-5 text-left k text-center">
+          I build modern, responsive, and scalable web and mobile applications using industry-standard technologies.
+          I have successfully delivered real client portfolio projects independently and continuously expand my skills into AI-powered applications.
+        </p>
+      </center>
+      <div className="mt-10 p-10">
+        <h1 className="text-4xl  font-blod csaa">About Me</h1>
+        <p className="mt-10 text-2xl text-left w-3/4 ml-10">
+          I am a passionate Full-Stack Developer specializing in the MERN Stack (MongoDB, Express.js, React.js, Node.js).
+          With hands-on experience delivering client projects, I focus on writing clean, secure, and efficient code while building user-friendly digital solutions.
+          Currently, I am expanding my knowledge into Artificial Intelligence to build intelligent web and mobile applications.
+        </p>
+      </div>
       <CoreExpertise/>
       <WhyChooseus />
       <Callus />

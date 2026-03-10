@@ -14,12 +14,12 @@ const Footer = () => {
             <img src={image5} width={100} height={200} style={{borderRadius:600, width:300,height:200}}/>
         </div>
         <div>
-           <p style={{display:'flex',alignItems:'center',columnGap:10}} className='clor'><FaMailBulk/> : deeshiss@deeshix.com</p>
-           <p style={{display:'flex',alignItems:'center',columnGap:10}} className='clor'><FaPhone/> : (+91) 8148181929</p>
-           <p style={{display:'flex',alignItems:'center',columnGap:10}} className='clor'><FaInternetExplorer/> www.deeshix.com</p>
+           <p style={{display:'flex',alignItems:'center',columnGap:10,color:'#CCF000'}}><FaMailBulk/> : deeshiss@deeshix.com</p>
+           <p style={{display:'flex',alignItems:'center',columnGap:10,color:'#CCF000'}}><FaPhone/> : (+91) 8148181929</p>
+           <p style={{display:'flex',alignItems:'center',columnGap:10,color:'#CCF000'}}><FaInternetExplorer/> www.deeshix.com</p>
         </div>
         <div>
-            <h2 className='clor'>© copy rights reserved 2026 www.deeshix.com</h2>
+            <h2 style={{color:'#CCF000'}}>© copy rights reserved 2026 www.deeshix.com</h2>
         </div>
     </footer>
     </>

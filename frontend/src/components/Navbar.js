@@ -99,7 +99,7 @@ const [formData, setFormData] = useState({
    <>
     <nav className='navbar z-50'>
        <div>
-          <img src={logo} className='w-[140px] h-[180px]' style={{borderRadius:265}}/>
+          <img src={logo} className='w-[140px] h-[170px]' style={{borderRadius:265}}/>
        </div>
        <div className='nav-sub'>
           <Link to={"/"}>
@@ -126,7 +126,11 @@ const [formData, setFormData] = useState({
           <div>
              <p onMouseOver={click2}>Active clients</p>
              {textui ? <div className='id-div' style={{padding:15}} onMouseLeave={click5}>
-                <a onClick={()=> window.speechSynthesis.cancel()} target='_blank' href='https://www.117securityforce.com' style={{textDecoration:'none',color:'black'}}>https://www.117securityfroce.com</a>
+                <a onClick={()=> window.speechSynthesis.cancel()} target='_blank' href='https://www.117securityforce.com' className='ju99' style={{textDecoration:'none',color:'white'}}>https://www.117securityfroce.com</a>
+                <br/>
+                <br/>
+                <br/>
+                <a onClick={()=> window.speechSynthesis.cancel()} target='_blank' href='https://www.saiofficefurniture.in' className='ju99' style={{textDecoration:'none',color:'white'}}>https://www.saiofficefurniture.in</a>
             </div> : <div></div>}
          </div>
          <div>
