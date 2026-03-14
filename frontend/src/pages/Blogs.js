@@ -1,6 +1,6 @@
-import blog from '../images/images/blog1.png'
-import blog2 from '../images/images/blog2.jpg'
-import blog3 from '../images/images/blog3.jpg'
+import blog from '../images/images/blog1.webp'
+import blog2 from '../images/images/blog2.webp'
+import blog3 from '../images/images/blog3.webp'
 
 const Blogs = () => {
     return (

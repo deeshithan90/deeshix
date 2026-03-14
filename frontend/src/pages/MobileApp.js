@@ -11,7 +11,7 @@ const MobileApp = () => {
            <h3 className='text-2xl text-center'>Startup Mobile App Solutions</h3>
       </div>
         <div className='flexs'>
-        <a href='/contact'><img src={image} width={300} height={300} style={{borderRadius:500}} className='image9'/></a>
+        <a href='/contact'><img src={image} width={1000} height={1000} style={{borderRadius:500}} className='image9'/></a>
         <br/>
         <br/>
     <div style={{display:'flex', alignItems:'center', justifyContent:'center', columnGap:80}}>
