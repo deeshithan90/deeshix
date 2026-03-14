@@ -14,6 +14,7 @@ import Ecommmerce from './pages/E-commerce';
 import Contact from './pages/Contact';
 import Whatsapp from './components/Whatsapp';
 import Requests from './pages/Request';
+import Blogs from './pages/Blogs';
 function App() {
   const [ui,setui] = useState(false)
   return (
@@ -41,13 +42,13 @@ function App() {
                <Route path='/' element={<Home />}/>
                <Route path='/technology' element={<Technoloy/>}/>
                <Route path='/industries' element={<Inderste/>}/>
-               <Route path='/Vision-mission' element={<VM/>}/>
                <Route path='/About' element={<About/>}/>
                <Route path='/Web-devlopement' element={<WebDevlopemnet/>}/>
                <Route path='/mobile-development' element={<MobileApp/>}/>
                <Route path='/ecommerce' element={<Ecommmerce/>}/>
                <Route path='/contact' element={<Contact/>}/>
                <Route path='/Request' element={<Requests/>}/>
+               <Route path='/blogs' element={<Blogs/>}/>
            </Routes>
 <Footer/>
        </BrowserRouter>

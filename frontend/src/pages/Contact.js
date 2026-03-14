@@ -19,7 +19,13 @@ const [sty,setsty] = useState(false)
     }
   };
     return (
-        <>
+        <> 
+         <div className='anss mt-80'>
+            <h1 className='text-5xl text-center text-white'>Contact Deeshix Technology Website Development & Digital Solutions</h1>
+            <h2 className='text-4xl text-center text-white'>Phone Number : +91 81481 81929</h2>
+            <h3 className='text-2xl text-center text-white'>Madambakkam, Chennai – 600126</h3>
+        </div>
+       
         <div className='op'>
             <div className="">
                 <img
@@ -32,7 +38,7 @@ const [sty,setsty] = useState(false)
             </div>
             <br/>
             <br/>
-            <button onClick={speak} style={{ width: 100, backgroundColor: '#41C1BA', padding: 10, borderRadius: 15, border: 'none' }}>
+            <button className='csaa' onClick={speak} style={{ width: 100, backgroundColor: 'black', padding: 10, borderRadius: 15, border: 'none' }}>
                 contact us
             </button>
             <br/>

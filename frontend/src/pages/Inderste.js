@@ -47,6 +47,11 @@ const Inderste = () => {
   }
   return (
     <div>
+       <div className='anss mt-80'>
+            <h1 className='text-5xl text-center text-white'>Industries We Serve Web Development & Digital Solutions</h1>
+            <h2 className='text-4xl text-center text-white mt-5 mb-4'>Industries We Support with Digital Solutions</h2>
+            <h3 className='text-2xl text-center text-white'>Healthcare and Medical Industry</h3>
+        </div>
       <div className="container">
             <img
               src={robot}

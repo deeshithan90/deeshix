@@ -28,19 +28,19 @@ const WhyChooseus = () => {
           </div>
 
           <div class="logo">
-            <h1 className='text-2xl' style={{ color: 'white' }}>Friendly budget</h1>
+            <h1 className='text-2xl' style={{ color: 'white' }}>Business promotion online</h1>
           </div>
 
           <div class="logo">
-            <h1 className='text-2xl' style={{ color: 'white' }}>Latest software & Tools</h1>
+            <h1 className='text-2xl' style={{ color: 'white' }}>Meta ads management</h1>
           </div>
 
           <div class="logo">
-            <h1 className='text-2xl' style={{ color: 'white' }}>Unique Services</h1>
+            <h1 className='text-2xl' style={{ color: 'white' }}>website design for startups</h1>
           </div>
 
           <div class="logo">
-            <h1 className='text-2xl' style={{ color: 'white' }}>Strategic Development</h1>
+            <h1 className='text-2xl' style={{ color: 'white' }}>professional website solutions</h1>
           </div>
         </div>
       </div>
@@ -70,15 +70,15 @@ const WhyChooseus = () => {
           </div>
 
           <div class="logo">
-            <h1 className='text-2xl' style={{ color: 'white' }}>Friendly budget</h1>
+            <h1 className='text-2xl' style={{ color: 'white' }}>digital marketing experts Chennai</h1>
           </div>
 
           <div class="logo">
-            <h1 className='text-2xl' style={{ color: 'white' }}>Latest software & Tools</h1>
+            <h1 className='text-2xl' style={{ color: 'white' }}>digital growth solutions Chennai</h1>
           </div>
 
           <div class="logo">
-            <h1 className='text-2xl' style={{ color: 'white' }}>Unique Services</h1>
+            <h1 className='text-2xl' style={{ color: 'white' }}>website SEO optimization</h1>
           </div>
 
           <div class="logo">
@@ -121,7 +121,7 @@ const WhyChooseus = () => {
           </div>
 
           <div class="logo">
-            <h1 className='text-2xl' style={{ color: 'white' }}>Unique Services</h1>
+            <h1 className='text-2xl' style={{ color: 'white' }}>Meta ads management</h1>
           </div>
 
           <div class="logo">
@@ -156,19 +156,19 @@ const WhyChooseus = () => {
           </div>
 
           <div class="logo">
-            <h1 className='text-2xl' style={{ color: 'white' }}>Friendly budget</h1>
+            <h1 className='text-2xl' style={{ color: 'white' }}>Meta ads management</h1>
           </div>
 
           <div class="logo">
-            <h1 className='text-2xl' style={{ color: 'white' }}>Latest software & Tools</h1>
+            <h1 className='text-2xl' style={{ color: 'white' }}>digital marketing experts Chennai</h1>
           </div>
 
           <div class="logo">
-            <h1 className='text-2xl' style={{ color: 'white' }}>Unique Services</h1>
+            <h1 className='text-2xl' style={{ color: 'white' }}>website SEO optimization</h1>
           </div>
 
           <div class="logo">
-            <h1 className='text-2xl' style={{ color: 'white' }}>Strategic Development</h1>
+            <h1 className='text-2xl' style={{ color: 'white' }}>professional website solutions</h1>
           </div>
         </div>
       </div>

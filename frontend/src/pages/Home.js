@@ -115,15 +115,15 @@ const Home = ({ sett }) => {
 
   return (
     <>
-      <div>
-        <div className="container mb-0 z-0 flexss mt-0">
-        <img
+      <div className="mt-80">
+        <div className="container mb-0 z-0 flexss mt-80 p-4">
+        <a href="/Web-devlopement"><img
           src={robot}
-          alt="Robot"
+          alt="Advance Latest Technology"
           className={`robot ${isTalking ? "walking" : ""}`}
-          style={{ width: 300, height: 300, }}
-        />
-        <div>
+          style={{ width: 240, height: 200, }}
+        /></a>
+        <div className="p-3">
           <button onClick={speak} className="speak-btn">
             About us
           </button>
@@ -180,6 +180,20 @@ const Home = ({ sett }) => {
       </div>
       <CoreExpertise/>
       <WhyChooseus />
+      <div className="flexs justifiy-center gap-30 mt-40 p-10">
+          <div className="w-fulls">
+              <h1 className="text-5xl mb-10 cjs w-full">Vission</h1>
+              <p className="w-1/2">
+                To help businesses and startups grow through smart, innovative web solutions.
+              </p>
+          </div>
+          <div className="w-fulls">
+              <h1 className="text-5xl mb-10 cjs">Mission</h1>
+              <p className="w-full">
+                Our mission is to help entrepreneurs, startups, and small to medium businesses grow online by delivering high-quality web development, e-commerce, and digital solutions.
+              </p>
+          </div>
+      </div>
       <Callus />
     </>
   );

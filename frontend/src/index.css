@@ -15,10 +15,15 @@ body {
    width: 100%;
    background-color: black;
 }
+.xxs{
+  box-shadow: #BF00FF 5px 5px 5px 5px;
+  padding: 10px;
+  display: inline-block;
+}
 .nav-sub{
    display: flex;
    align-items: center;
-   column-gap: 50px;
+   column-gap: 20px;
 }
 .flexs{
   display: flex;
@@ -84,6 +89,13 @@ body {
 
 .clor{
   color: #BF00FF;
+}
+.xx{
+  color: #CCFF00;
+  box-shadow: #BF00FF 5px 5px 40px 5px;
+  padding: 15px;
+  margin: 10px;
+  display: inline-block;
 }
 
 .k{
@@ -159,6 +171,21 @@ body {
   background-color: black;
   border-radius: 10px;
 }
+.ans{
+  animation:blinks 8s infinite;
+  margin-top:20px;
+  margin-bottom:30px;
+}
+
+@keyframes blinks {
+   to {
+      opacity: 100%;
+   }
+   from{
+    opacity: 0;
+   }
+}
+
 .gs{
   border-right: 2px solid #CCFF00;
   padding: 5px;
@@ -256,18 +283,19 @@ body {
 }
 
 .typing {
-  width: 66ch;
+  width: 55ch;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   animation:
     typing 9s steps(27) infinite,
     blink .20s step-end infinite;
+    font-size: 25px;
 }
 
 @keyframes typing {
   from { width: 0; }
-  to   { width: 66ch; }
+  to   { width: 55ch; }
 }
 
 @keyframes typings{
@@ -375,16 +403,16 @@ body {
    padding-right: 20px;
    padding-top: 10px;
    padding-bottom: 10px;
-   background-color: #41C1BA;
+   background-color: black;
    border: none;
    border-radius: 25px;
    width: 300px;
    transition: 1s;
-   color: #f7f7f7;
+   color: #CCFF00;
 }
 
 .btns:hover{
-   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+   box-shadow:#BF00FF 5px 5px 5px 5px;
 }
 
 html {
@@ -429,10 +457,6 @@ html {
    width: 300px;
    height: 300px;
    border-radius: 500px;
-   border-top: #41C1BA 10px solid;
-   border-bottom: #41C1BA 10px solid;
-   border-left: #41C1BA 10px solid;
-   border-right:#41C1BA 10px solid;
 }
 
 .fg{
@@ -444,7 +468,7 @@ html {
 }
 
 .input{
-  background-color: #0F2632;
+  background-color: blue;
   padding: 30px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   border-radius: 25px;
@@ -486,16 +510,27 @@ html {
    width: 250px;
    padding: 10px;
 }
+.w-fulls{
+  padding: 10px;
+  width: 40%;
+}
 .side-Navbar{
-   background-color: #41C1BA;
+   background-color: black;
    padding: 30px;
    width: 100%;
    position: fixed;
    top: -60%;
    left: 0px;
-   color: #0F2632;
+   color: white;
    display: inline-block;
    z-index: 80;
+}
+.cjs{
+  box-shadow: #BF00FF 5px 5px 5px 5px;
+  color: #CCFF00;
+}
+.ssss{
+   color: #CCFF00;
 }
 
 .about{
@@ -518,7 +553,9 @@ html {
   justify-content: center;
   column-gap: 60px;
 }
-
+.ssss a:hover{
+   text-decoration: underline 3px #BF00FF;
+}
 .jit{
   display: flex;
   align-items: center;
@@ -529,8 +566,20 @@ html {
 .about p{
   width: 700px;
 }
+.anss{
+  animation: spinsn 10s infinite;
+}
+
+@keyframes spinsn {
+   to{
+     opacity: 100%;
+   }
+   from{
+    opacity: 0%;
+   }
+}
 .op{
-  margin-top: 190px;
+  margin-top: 0px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -640,11 +689,18 @@ html {
   .security-guard{
      display: block;   
   }
-
+.jus{
+  display: none;
+}
 .ghs{
   display: block;
 }
-
+.w-fulls{
+  width: 100%;
+}
+.deeshi{
+  width: 800px;
+}
 
   .grids{
      display: block;
@@ -737,7 +793,7 @@ html {
   color: #0F2632;
   }
   .input{
-    background-color: #0F2632;
+    background-color: blue;
     padding: 30px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     border-radius: 25px;
