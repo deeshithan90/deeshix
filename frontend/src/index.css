@@ -767,11 +767,22 @@ html {
     display: none;
   }
 
+  .tex:hover{
+    text-decoration: underline #BF00FF 2px;
+  }
   .bg{
-    background-color: #0F2632;
     color: #f7f7f7;
     padding: 10px;
     border-radius: 15px;
+    box-shadow: #BF00FF 5px 5px 5px 5px;
+  }
+
+  .bg p:hover{
+    text-decoration: underline #BF00FF 2px;
+  }
+
+  .bg a:hover{
+    text-decoration: underline #BF00FF 2px;
   }
 
   .typing {

@@ -25,7 +25,7 @@ const Footer = () => {
            <a href='/contact'>
                <p>Contact</p>
            </a>
-           <a href='/Web-devlopement'>
+           <a href='/web-devlopement'>
               <p>Services</p>
            </a>
            <a href='https://www.saiofficefurniture.in'>

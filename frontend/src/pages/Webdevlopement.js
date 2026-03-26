@@ -1,11 +1,11 @@
-import React from 'react'
 import web from '../images/webd.jpg'
-import Callus from '../components/Call-us'
+import Callus from '../components/Call-us.js'
 
-const WebDevlopemnet = () => {
+
+const Webdevlopement = () => {
   return (
-    <>
-    <div className='mt-50' style={{marginTop:250}}>
+        <>
+    <div style={{marginTop:250}}>
       <div className='ans'>
           <h1 className='text-5xl text-center'>Professional Web Development Services in Chennai</h1>
           <h2 className='text-4xl text-center mt-5 mb-4'>Responsive and SEO Friendly Web Design</h2>
@@ -50,4 +50,4 @@ const WebDevlopemnet = () => {
   )
 }
 
-export default WebDevlopemnet
+export default Webdevlopement;

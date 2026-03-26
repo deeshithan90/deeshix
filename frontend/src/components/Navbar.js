@@ -133,7 +133,7 @@ const [formData, setFormData] = useState({
          <div>
           <p onMouseOver={lci}>Services</p>
           {textuis ? <div className='id-div' onMouseLeave={lici2}>
-              <Link to={"/Web-devlopement"} onClick={()=> window.location.href='/Web-devlopement'}>
+              <Link to={"/Web-devlopement"} onClick={()=> window.location.href='/web-devlopement'}>
                   <p onClick={()=> window.speechSynthesis.cancel()}>Web development</p>
                </Link>
                <Link to={"/mobile-development"} onClick={()=> window.location.href='/mobile-development'}>
@@ -203,38 +203,37 @@ const [formData, setFormData] = useState({
       <br/>
         <div className='grid grid-col-4'>
             <Link onClick={() => window.location.href = "/"}>
-               <p>Home</p>
+               <p className='tex'>Home</p>
             </Link>
             <br/>
-            <p onClick={()=> setuis(true)}>About</p>
-            <br/>
+            <p className='tex' onClick={()=> setuis(true)}>About</p>
             {uis ? <div className='bg'>
                <Link to={"/About"} onClick={()=> window.speechSynthesis.cancel()}>
-                    <p style={{color:'black'}} onClick={()=> window.location.href='/About'}>About us</p>
+                    <p style={{color:'white'}} onClick={()=> window.location.href='/About'}>About us</p>
                 </Link>
                 <br/>
                <Link to={"/technology"} onClick={()=> window.speechSynthesis.cancel()}>
-                  <p style={{color:'black'}} onClick={()=> window.location.href='/technology'}>Technologies We Use</p>
+                  <p style={{color:'white'}} onClick={()=> window.location.href='/technology'}>Technologies We Use</p>
                </Link>
                <br/>
                 <Link to={"/industries"} onClick={()=> window.speechSynthesis.cancel()}>
-                   <p style={{color:'black'}} onClick={()=> window.location.href='industries'}>Industries We Serve</p>
+                   <p style={{color:'white'}} onClick={()=> window.location.href='industries'}>Industries We Serve</p>
                 </Link>
                 <br/>
                 <p><a onClick={()=> window.speechSynthesis.cancel()} style={{textDecoration:'none',color:'#f7f7f7'}} href='/#id6'>Why Choose us</a></p>
             </div> : ""}
-            <p onClick={()=> setui6(true)}>Active Clients</p>
-            {ui6 ? <>  <a onClick={()=> window.speechSynthesis.cancel()} target='_blank' href='https://www.117securityforce.com' style={{textDecoration:'none',color:'#f7f7f7',padding:10}}>117securityforce</a>
             <br/>
+            <p className='tex' onClick={()=> setui6(true)}>Active Clients</p>
+            {ui6 ? <>  <a onClick={()=> window.speechSynthesis.cancel()} target='_blank' href='https://www.117securityforce.com' style={{textDecoration:'none',color:'#f7f7f7',padding:10}}>117securityforce</a>
                      <a onClick={()=> window.speechSynthesis.cancel()} target='_blank' href='https://www.saiofficefurniture.in' style={{textDecoration:'none',color:'#f7f7f7',padding:10}}>Sai Enterprises</a> 
                     </>
             : ""}
             <br/>
-            <p onClick={()=> setuis7(true)}>Services</p>
+            <p className='tex' onClick={()=> setuis7(true)}>Services</p>
             {uis7 ? <div className='bg'> 
                <br/>
-              <Link to={"/Web-devlopement"} onClick={()=> window.speechSynthesis.cancel()}>
-                  <p style={{color:'white'}} onClick={()=> window.location.href='/Web-developement'}>Web development</p>
+              <Link to={"/web-devlopement"} onClick={()=> window.speechSynthesis.cancel()}>
+                  <p style={{color:'white'}} onClick={()=> window.location.href='/web-devlopement'}>Web development</p>
                </Link>
                <br/>
                <Link to={"/mobile-development"} onClick={()=> window.speechSynthesis.cancel()}>
@@ -247,15 +246,15 @@ const [formData, setFormData] = useState({
                 </div>: <div></div>}
                 <br/>
             <Link to={"/contact"} onClick={()=> window.speechSynthesis.cancel()}>
-            <p style={{color:'white'}} onClick={()=> window.location.href='/contact'}>Conact</p>
+            <p className='tex' style={{color:'white'}} onClick={()=> window.location.href='/contact'}>Conact</p>
             </Link>
             <br/>
             <Link to={"/contact"} onClick={()=> window.speechSynthesis.cancel()}>
-            <p style={{color:'white'}} onClick={()=> window.location.href='/blogs'}>Blogs</p>
+            <p className='tex' style={{color:'white'}} onClick={()=> window.location.href='/blogs'}>Blogs</p>
             </Link>
             <br/>
             <Link to={"/Request"} onClick={()=> window.speechSynthesis.cancel()}>
-            <p style={{color:'white'}} onClick={()=> window.location.href='/Request'}>Request PortFolio</p>
+            <p className='tex' style={{color:'white'}} onClick={()=> window.location.href='/Request'}>Request PortFolio</p>
             </Link>
         </div>
     </div>:""}

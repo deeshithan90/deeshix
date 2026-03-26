@@ -6,15 +6,14 @@ import { useState } from 'react';
 import Footer from './components/Footer';
 import Technoloy from './pages/Technoloy';
 import Inderste from './pages/Inderste';
-import VM from './pages/VM';
 import About from './pages/About';
-import WebDevlopemnet from './pages/WebDevlopemnet';
 import MobileApp from './pages/MobileApp';
 import Ecommmerce from './pages/E-commerce';
 import Contact from './pages/Contact';
 import Whatsapp from './components/Whatsapp';
 import Requests from './pages/Request';
 import Blogs from './pages/Blogs';
+import Webdevlopement from './pages/Webdevlopement';
 function App() {
   const [ui,setui] = useState(false)
   return (
@@ -43,7 +42,7 @@ function App() {
                <Route path='/technology' element={<Technoloy/>}/>
                <Route path='/industries' element={<Inderste/>}/>
                <Route path='/About' element={<About/>}/>
-               <Route path='/Web-devlopement' element={<WebDevlopemnet/>}/>
+               <Route path='/web-devlopement' element={<Webdevlopement/>}/>
                <Route path='/mobile-development' element={<MobileApp/>}/>
                <Route path='/ecommerce' element={<Ecommmerce/>}/>
                <Route path='/contact' element={<Contact/>}/>
