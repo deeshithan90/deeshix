@@ -7,34 +7,43 @@ const About = () => {
   return (
     <div style={{marginTop:220}}>
       <div className='ans'>
-      <h1 className='text-5xl w-full text-center'>
-          Your Trusted Website Development Partner
+      <h1 className='text-6xl w-full text-center'>
+          Grow Your Business with Strong Online Presence | Deeshix Technology
       </h1>
       <br/>
-      <h2 className='text-3xl w-full text-center'>
+      <h1 className='text-3xl w-full text-center'>
           Complete Digital Solutions for Your Business
-      </h2>
+      </h1>
       </div>
+      <center>
+      <div style={{border : 'white 2px solid',width:100,marginBottom:220,marginTop:60}}>
+          
+      </div>
+      </center>
       <CreatorVoice/>
 <br/>
 <br/> 
-        <div style={{display:'flex',alignItems:'center',justifyContent:'space-around'}}>
-             <div style={{display:'flex',alignItems:'center', columnGap:20}}>
-                <div style={{backgroundColor:'black', padding:20}}>
-                    <h1 className='text-3xl csaa' style={{marginBottom:10}}>About us</h1>
-                    <br></br>
-                    <p style={{color:'white',paddingLeft:50, padding:30}} className='md:w-1/2 lg:w-1/2 sm:w-full'>Deeshix Technology is dedicated to
-                       providing innovative website development and digital marketing services to businesses
-                        looking to build a strong online presence. Our mission is to help companies grow 
-                        digitally through creative design, efficient development, and data-driven marketing 
-                        strategies.
-                    </p>
-                    <p style={{color:'white',paddingLeft:30,}} className='md:w-1/2 lg:w-1/2 sm:w-full'>
-                        We combine modern technologies, user-focused design, and SEO best practices to deliver websites that perform well in search engines and provide an exceptional user experience.
-                    </p>
-                </div>
-             </div>
-        </div>
+        <div className="mt-10 p-10">
+        <h2 className="text-4xl  font-blod csaa">About Us</h2>
+        <h3 className="text-3xl font-bold mt-10 ml-10 w-[500px]">Deeshix Technology - Leading Web Development Company in Chennai</h3>
+        <p className="mt-10 text-2xl text-left w-3/4 ml-10">
+          Welcome to Deeshix Technology,
+          your trusted partner for innovative and
+          result-driven web development solutions in Chennai,
+          Tamil Nadu, India. We specialize in creating modern,
+          responsive, and high-performing websites that help businesses
+          grow digitally.
+        </p>
+        <h3 className="text-3xl font-bold mt-10 ml-10 w-[500px]">Build Your Digital Presence with Experts</h3>
+        <p className="mt-10 text-2xl text-left w-3/4 ml-10">
+          At Deeshix Technology,
+          we design and develop websites that are not just visually appealing
+          but also optimized for performance, SEO, and user experience.
+          Whether you are a startup, small business, or enterprise, we deliver customized web
+          solutions tailored to your goals.
+        </p>
+      </div>
+      
         <br/>
         <BarndsValue/>
         <Callus/>

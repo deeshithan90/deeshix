@@ -41,6 +41,11 @@ body {
   cursor: pointer;
 }
 
+.dx {
+  color: white;
+  background-color: black;
+}
+
 .nav-sub p:hover{
   border-radius: 25px;
   color: #CCFF00;

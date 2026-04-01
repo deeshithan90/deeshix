@@ -5,7 +5,7 @@ import { BiLogoMongodb } from 'react-icons/bi'
 const CoreExpertise = () => {
     return (
         <>
-        <h1 className='text-4xl csaa mt-10 ml-9'>Core Expertise</h1>
+        <h2 className='text-2xl csaa mt-10 ml-9'>Core Expertise</h2>
         <div className='grids mt-10'>
             {/**MongoDB*/}
             <div className='flex gap-4'>

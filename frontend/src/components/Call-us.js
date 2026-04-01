@@ -6,7 +6,7 @@ const Callus = () => {
     <br></br>
     <div className='jus' style={{backgroundColor:'black', padding:20}}>
         <div className='text-3xl p-10 bg-white-500' style={{display:'flex',alignItems:'center',columnGap:30}}>
-         <h1  style={{color:'#CCFF00'}}>Call to Action</h1>
+         <h2  style={{color:'#CCFF00'}}>Call to Action</h2>
          <p><FaPhone style={{color:'#CCF000'}}/></p>
         </div>
          <center>

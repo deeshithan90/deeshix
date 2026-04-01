@@ -59,6 +59,7 @@ const [formData, setFormData] = useState({
    const [textuis,settextuis] = useState(false)
    function click(){
       sett(true)
+      settextui(false)  
    }
    function home(){
       sett(false)
@@ -123,11 +124,11 @@ const [formData, setFormData] = useState({
           <div>
              <p onMouseOver={click2}>Active clients</p>
              {textui ? <div className='id-div' style={{padding:15}} onMouseLeave={click5}>
-                <a onClick={()=> window.speechSynthesis.cancel()} target='_blank' href='https://www.117securityforce.com' className='ju99' style={{textDecoration:'none',color:'white'}}>117securityfroce</a>
+                <a onClick={()=> window.speechSynthesis.cancel()} target='_blank' href='https://www.117securityforce.com' className='ju99' style={{textDecoration:'none',color:'#CCFF00'}}>117securityfroce</a>
                 <br/>
                 <br/>
                 <br/>
-                <a onClick={()=> window.speechSynthesis.cancel()} target='_blank' href='https://www.saiofficefurniture.in' className='ju99' style={{textDecoration:'none',color:'white'}}>saiofficefurniture</a>
+                <a onClick={()=> window.speechSynthesis.cancel()} target='_blank' href='https://www.saiofficefurniture.in' className='ju99' style={{textDecoration:'none',color:'#CCFF00'}}>saiofficefurniture</a>
             </div> : <div></div>}
          </div>
          <div>

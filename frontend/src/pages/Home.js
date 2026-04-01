@@ -20,14 +20,11 @@ const Home = ({ sett }) => {
     window.speechSynthesis.cancel()
     SetInnerText(false)
     const message = new SpeechSynthesisUtterance(
-      `Hello human. Welcome to deeshix. Our journey is just beginning 2026 jan 11,
-    I am deeshithan sathish 12 years old, I saw a major problem, small businesses were
-    being left behind by an increasingly complex digital world. We started deeshix
-     to break down those barriers and bring high-end, strategic web development
-    within reach for everyone. We aren't just another agency; we’re a dedicated partner
-    invested in your long-term success. By combining transparent communication with a
-    focus on 'Trust UX' and ethical design, we build more than just websites—we build
-    digital experiences where every click feels like a natural conversation.`);
+      `Hello human. Welcome to Deeshix Technology, 
+      your trusted partner for innovative and result-driven 
+      web development solutions in Chennai, Tamil Nadu, India. 
+      We specialize in creating modern, responsive,
+       and high-performing websites that help businesses grow digitally.`);
     message.rate = 0.9;
     message.pitch = 0.1;
     message.volume = 1;
@@ -52,7 +49,16 @@ const Home = ({ sett }) => {
     Settext(false)
     const message = new SpeechSynthesisUtterance(
       `
-      Hi, I’m Deeshithan Sathish, a passionate young developer focused on building modern, high-quality digital solutions. While many people my age consume technology, I choose to create it. I am a self-taught developer who transformed learning time into real-world building by studying and following industry-leading engineers. I specialize in HTML, CSS, JavaScript, Python, and Node.js, with hands-on experience in frameworks and technologies such as React, React Native, Express, MongoDB, Flutter, and Django. My work includes web development, e-commerce platforms, mobile application development, and SEO-focused solutions. I have completed full-stack development projects and successfully deployed them for clients. In January 2026, I founded deeshix to support businesses with custom-built, reliable, and scalable digital products, ensuring long-term growth through clean code, innovation, and high professional standards
+      Meet Deeshithan Sathish - 
+            Founder of Deeshix Technology, I am 12 years 
+            old self-taught MERN stack developer specialized in MongoDB, 
+            Express.js , React.js Node.js Mongoose ODM TanstackQuery , JWT , 
+            dotenv, cookieparser, Java script Type script , css , html, tailwindcss python, 
+            Django. Hi, I’m Deeshithan Sathish Young Full-Stack (MERN) Developer & Future
+             AI Engineer Chennai, Tamil Nadu, India 🇮🇳. I build modern, responsive, and scalable 
+             web and mobile applications using industry-standard technologies. 
+             I have successfully delivered real client portfolio projects 
+            independently and continuously expand my skills into AI-powered applications.
 `);
     message.rate = 0.9;
     message.pitch = 0. - 1;
@@ -115,84 +121,88 @@ const Home = ({ sett }) => {
 
   return (
     <>
-      <div className="mt-80">
+      <div className="mt-60">
         <div className="container mb-0 z-0 flexss mt-80 p-4">
-        <a href="/Web-devlopement"><img
-          src={robot}
-          alt="Advance Latest Technology"
-          className={`robot ${isTalking ? "walking" : ""}`}
-          style={{ width: 240, height: 200, }}
-        /></a>
-        <div className="p-3">
-          <button onClick={speak} className="speak-btn">
-            About us
-          </button>
-          <br></br>
-          <br></br>
-          <button onClick={speak2} className="speak-btn">
-            Founder voice
-          </button> 
+          <a href="/Web-devlopement"><img
+            src={robot}
+            alt="Advance Latest Technology"
+            className={`robot ${isTalking ? "walking" : ""}`}
+            style={{ width: 440, height: 260, }}
+          /></a>
+          <div className="p-3">
+            <button onClick={speak} className="speak-btn">
+              About us
+            </button>
+            <br></br>
+            <br></br>
+            <button onClick={speak2} className="speak-btn">
+              Founder voice
+            </button>
+          </div>
+          <div className="p-4">
+            <h1 className="text-5xl ans">The Best Web Development Company in Chennai Tamil Nadu India</h1>
+          </div>
         </div>
-        <div className="mb-0 mt-10 w-full">
-            <h1 className="text-4xl text-center p-0">Meet Deeshithan Sathish - 12 years Old self Taught MERN stack developer</h1>
-            <h2 className="text-2xl text-center p-0 mt-10">specialized in MongoDB, Express.js , React.js Node.js Mongoose ODM TanstackQuery , JWT , dotenv, cookieparser, Java script Type script , css , html, tailwindcss python,  Django</h2>
+        {text ? <div class="marquee">
+          <p>
+            Hello human. Welcome to Deeshix Technology, 
+      your trusted partner for innovative and result-driven 
+      web development solutions in Chennai, Tamil Nadu, India. 
+      We specialize in creating modern, responsive,
+       and high-performing websites that help businesses grow digitally.
+          </p>
         </div>
+          : <div></div>}
+        {InnerText ? <div class="marquee">
+          <p>
+            Meet Deeshithan Sathish - 
+            Founder of Deeshix Technology, I am 12 years 
+            old self-taught MERN stack developer specialized in MongoDB, 
+            Express.js , React.js Node.js Mongoose ODM TanstackQuery , JWT , 
+            dotenv, cookieparser, Java script Type script , css , html, tailwindcss python, 
+            Django. Hi, I’m Deeshithan Sathish Young Full-Stack (MERN) Developer & Future
+             AI Engineer Chennai, Tamil Nadu, India 🇮🇳. I build modern, responsive, and scalable 
+             web and mobile applications using industry-standard technologies. 
+             I have successfully delivered real client portfolio projects 
+            independently and continuously expand my skills into AI-powered applications.
+          </p>
+        </div> : <div></div>}
       </div>
-      <br></br>
-      {text ? <div class="marquee">
-        <p>
-          Hello human. Welcome to ashdeeinfotech. Our journey is just beginning 2026 jan 11,
-          I am deeshithan sathish 12 years old, I saw a major problem, small businesses were
-          being left behind by an increasingly complex digital world. We started ASHDEE
-          INFOTECH to break down those barriers and bring high-end, strategic web development
-          within reach for everyone. We aren't just another agency; we’re a dedicated partner
-          invested in your long-term success. By combining transparent communication with a
-          focus on 'Trust UX' and ethical design, we build more than just websites—we build
-          digital experiences where every click feels like a natural conversation.
-        </p>
-      </div>
-        : <div></div>}
-      {InnerText ? <div class="marquee">
-        <p>
-          Hi, I’m Deeshithan Sathish, a passionate young developer focused on building modern, high-quality digital solutions. While many people my age consume technology, I choose to create it. I am a self-taught developer who transformed learning time into real-world building by studying and following industry-leading engineers. I specialize in HTML, CSS, JavaScript, Python, and Node.js, with hands-on experience in frameworks and technologies such as React, React Native, Express, MongoDB, Flutter, and Django. My work includes web development, e-commerce platforms, mobile application development, and SEO-focused solutions. I have completed full-stack development projects and successfully deployed them for clients. In January 2026, I founded Deeshix to support businesses with custom-built, reliable, and scalable digital products, ensuring long-term growth through clean code, innovation, and high professional standards.</p>
-      </div> : <div></div>}
-      </div>
-      <center className="mt-0 w-full p-10 bg-black text-white">
-        <p className="text-3xl text-left">
-          <BiChat color="#CCFF00" size={100} />
-        </p>
-        <h1 className="text-5xl mt-5 mb-10  text-center">Hi, I’m Deeshithan Sathish
-          Young Full-Stack (MERN) Developer & Future AI Engineer
-          Chennai, Tamil Nadu, India 🇮🇳
-        </h1>
-        <p className="text-2xl mt-5 mb-5 text-left k text-center">
-          I build modern, responsive, and scalable web and mobile applications using industry-standard technologies.
-          I have successfully delivered real client portfolio projects independently and continuously expand my skills into AI-powered applications.
-        </p>
-      </center>
       <div className="mt-10 p-10">
-        <h1 className="text-4xl  font-blod csaa">About Me</h1>
-        <p className="mt-10 text-2xl text-left w-3/4 ml-10">
-          I am a passionate Full-Stack Developer specializing in the MERN Stack (MongoDB, Express.js, React.js, Node.js).
-          With hands-on experience delivering client projects, I focus on writing clean, secure, and efficient code while building user-friendly digital solutions.
-          Currently, I am expanding my knowledge into Artificial Intelligence to build intelligent web and mobile applications.
+        <h2 className="text-2xl  csaa">About Us</h2>
+        <h3 className="text-3xl font-bold mt-10 ml-10 w-[500px]">Deeshix Technology - Leading Web Development Company in Chennai</h3>
+        <p className="mt-10 text-[20px] text-left w-3/4 ml-10">
+          Welcome to Deeshix Technology,
+          your trusted partner for innovative and
+          result-driven web development solutions in Chennai,
+          Tamil Nadu, India. We specialize in creating modern,
+          responsive, and high-performing websites that help businesses
+          grow digitally.
+        </p>
+        <h3 className="text-3xl font-bold mt-10 ml-10 w-[500px]">Build Your Digital Presence with Experts</h3>
+        <p className="mt-10 text-[20px] text-left w-3/4 ml-10">
+          At Deeshix Technology,
+          we design and develop websites that are not just visually appealing
+          but also optimized for performance, SEO, and user experience.
+          Whether you are a startup, small business, or enterprise, we deliver customized web
+          solutions tailored to your goals.
         </p>
       </div>
-      <CoreExpertise/>
+      <CoreExpertise />
       <WhyChooseus />
       <div className="flexs justifiy-center gap-30 mt-40 p-10">
-          <div className="w-fulls">
-              <h1 className="text-5xl mb-10 cjs w-full">Vission</h1>
-              <p className="w-1/2">
-                To help businesses and startups grow through smart, innovative web solutions.
-              </p>
-          </div>
-          <div className="w-fulls">
-              <h1 className="text-5xl mb-10 cjs">Mission</h1>
-              <p className="w-full">
-                Our mission is to help entrepreneurs, startups, and small to medium businesses grow online by delivering high-quality web development, e-commerce, and digital solutions.
-              </p>
-          </div>
+        <div className="w-fulls">
+          <h2 className="text-2xl text-center mb-10 cjs p-2 w-1/2">Vission</h2>
+          <p className="w-1/2">
+            To help businesses and startups grow through smart, innovative web solutions.
+          </p>
+        </div>
+        <div className="w-fulls">
+          <h2 className="text-2xl text-center p-2 w-1/2 mb-10 cjs">Mission</h2>
+          <p className="w-full">
+            Our mission is to help entrepreneurs, startups, and small to medium businesses grow online by delivering high-quality web development, e-commerce, and digital solutions.
+          </p>
+        </div>
       </div>
       <Callus />
     </>
