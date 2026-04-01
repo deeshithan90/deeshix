@@ -2,12 +2,6 @@ import React, { useState } from "react";
 import robot from "../images/Robo.png";
 import WhyChooseus from "../components/WhyChoose us";
 import Callus from "../components/Call-us";
-import { FaChartBar, FaMicrophone } from "react-icons/fa";
-import { BiChat } from 'react-icons/bi'
-import storage from "../db/Storage";
-import Answerstorage from "../db/answerStorage";
-import BannerVideo from "../components/Banner";
-import logobg from '../images/bg.png'
 import CoreExpertise from "../components/CoreExpertise";
 
 const Home = ({ sett }) => {
@@ -170,7 +164,7 @@ const Home = ({ sett }) => {
       </div>
       <div className="mt-10 p-10">
         <h2 className="text-2xl  csaa">About Us</h2>
-        <h3 className="text-3xl font-bold mt-10 ml-10 w-[500px]">Deeshix Technology - Leading Web Development Company in Chennai</h3>
+        <h3 className="lg:text-3xl font-bold mt-10 ml-10 w-[500px]">Deeshix Technology - Leading Web Development Company in Chennai</h3>
         <p className="mt-10 text-[20px] text-left w-3/4 ml-10">
           Welcome to Deeshix Technology,
           your trusted partner for innovative and
@@ -179,7 +173,7 @@ const Home = ({ sett }) => {
           responsive, and high-performing websites that help businesses
           grow digitally.
         </p>
-        <h3 className="text-3xl font-bold mt-10 ml-10 w-[500px]">Build Your Digital Presence with Experts</h3>
+        <h3 className="lg:text-3xl lg:font-bold lg:mt-10 ml-10 lg:w-[400px]">Build Your Digital Presence with Experts</h3>
         <p className="mt-10 text-[20px] text-left w-3/4 ml-10">
           At Deeshix Technology,
           we design and develop websites that are not just visually appealing
@@ -192,13 +186,13 @@ const Home = ({ sett }) => {
       <WhyChooseus />
       <div className="flexs justifiy-center gap-30 mt-40 p-10">
         <div className="w-fulls">
-          <h2 className="text-2xl text-center mb-10 cjs p-2 w-1/2">Vission</h2>
+          <h2 className="lg:text-2xl text-center mb-10 cjs p-2 w-1/2">Vission</h2>
           <p className="w-1/2">
             To help businesses and startups grow through smart, innovative web solutions.
           </p>
         </div>
         <div className="w-fulls">
-          <h2 className="text-2xl text-center p-2 w-1/2 mb-10 cjs">Mission</h2>
+          <h2 className="lg:text-2xl text-center p-2 w-1/2 mb-10 cjs">Mission</h2>
           <p className="w-full">
             Our mission is to help entrepreneurs, startups, and small to medium businesses grow online by delivering high-quality web development, e-commerce, and digital solutions.
           </p>

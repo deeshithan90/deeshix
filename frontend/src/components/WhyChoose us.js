@@ -36,11 +36,11 @@ const WhyChooseus = () => {
           </div>
 
           <div class="logo">
-            <h2 className='text-2xl' style={{ color: 'white' }}>website design for startups</h2>
+            <h2 className='text-2xl' style={{ color: 'white' }}>Website design for startups</h2>
           </div>
 
           <div class="logo">
-            <h2 className='text-2xl' style={{ color: 'white' }}>professional website solutions</h2>
+            <h2 className='text-2xl' style={{ color: 'white' }}>Professional website solutions</h2>
           </div>
         </div>
       </div>
@@ -70,15 +70,15 @@ const WhyChooseus = () => {
           </div>
 
           <div class="logo">
-            <h2 className='text-2xl' style={{ color: 'white' }}>digital marketing experts Chennai</h2>
+            <h2 className='text-2xl' style={{ color: 'white' }}>Digital marketing experts Chennai</h2>
           </div>
 
           <div class="logo">
-            <h2 className='text-2xl' style={{ color: 'white' }}>digital growth solutions Chennai</h2>
+            <h2 className='text-2xl' style={{ color: 'white' }}>Digital growth solutions Chennai</h2>
           </div>
 
           <div class="logo">
-            <h2 className='text-2xl' style={{ color: 'white' }}>website SEO optimization</h2>
+            <h2 className='text-2xl' style={{ color: 'white' }}>Website SEO optimization</h2>
           </div>
 
           <div class="logo">
@@ -160,15 +160,15 @@ const WhyChooseus = () => {
           </div>
 
           <div class="logo">
-            <h2 className='text-2xl' style={{ color: 'white' }}>digital marketing experts Chennai</h2>
+            <h2 className='text-2xl' style={{ color: 'white' }}>Digital marketing experts Chennai</h2>
           </div>
 
           <div class="logo">
-            <h2 className='text-2xl' style={{ color: 'white' }}>website SEO optimization</h2>
+            <h2 className='text-2xl' style={{ color: 'white' }}>Website SEO optimization</h2>
           </div>
 
           <div class="logo">
-            <h2 className='text-2xl' style={{ color: 'white' }}>professional website solutions</h2>
+            <h2 className='text-2xl' style={{ color: 'white' }}>Professional website solutions</h2>
           </div>
         </div>
       </div>

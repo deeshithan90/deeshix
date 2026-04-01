@@ -25,7 +25,7 @@ const About = () => {
 <br/> 
         <div className="mt-10 p-10">
         <h2 className="text-4xl  font-blod csaa">About Us</h2>
-        <h3 className="text-3xl font-bold mt-10 ml-10 w-[500px]">Deeshix Technology - Leading Web Development Company in Chennai</h3>
+        <h3 className="lg:text-3xl lg:font-bold lg:mt-10 ml-10 lg:w-[400px] mt-20">Deeshix Technology - Leading Web Development Company in Chennai</h3>
         <p className="mt-10 text-2xl text-left w-3/4 ml-10">
           Welcome to Deeshix Technology,
           your trusted partner for innovative and
@@ -34,7 +34,7 @@ const About = () => {
           responsive, and high-performing websites that help businesses
           grow digitally.
         </p>
-        <h3 className="text-3xl font-bold mt-10 ml-10 w-[500px]">Build Your Digital Presence with Experts</h3>
+        <h3 className="lg:text-3xl lg:font-bold lg:mt-10 ml-10 lg:w-[500px]">Build Your Digital Presence with Experts</h3>
         <p className="mt-10 text-2xl text-left w-3/4 ml-10">
           At Deeshix Technology,
           we design and develop websites that are not just visually appealing
