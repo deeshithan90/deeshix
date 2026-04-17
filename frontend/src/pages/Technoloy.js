@@ -68,7 +68,7 @@ const Technoloy = () => {
   return (
     <>
     <div className='hyx'>
-    <div style={leftco ? {padding:20 , width : 300, backgroundColor:'#0F2632', display : 'none'} : {padding:20 ,transition:1, backgroundColor:'#0F2632',width : 300, height:200, border :'#41C1BA 2px solid',borderRadius:20 , display:'block'}}>
+    <div style={leftco ? {padding:20 , width : 300, backgroundColor:'black', display : 'none'} : {padding:20 ,transition:1, backgroundColor:'black',width : 300, height:200, boxShadow:'#BF00FF 5px 5px 5px 5px',borderRadius:20 , display:'block'}}>
        {s1 ? <div>
           <div style={{display:'flex',alignItems:'center',justifyContent:'space-around'}}>
             <FaHtml5 color='red' size={60}/>
@@ -94,7 +94,7 @@ const Technoloy = () => {
        {s3 ?<div>
           <div style={{display:'flex',alignItems:'center',justifyContent:'space-around'}}>
              <FaFire color='orange' size={60}/>
-             <FaCloud color='black' size={60}/>
+             <FaCloud color='white' size={60}/>
           </div>
        </div> :  <div></div>}
        {s4 ?<div>
@@ -136,7 +136,7 @@ const Technoloy = () => {
          <button onClick={click6}>Tools</button>
       </div>
 <br/>
-    <div style={leftco ? {padding:20 , width : 300, backgroundColor:'#0F2632', display:'none'} : {padding:20 ,transition:1, backgroundColor:'#0F2632',width : 300, height:200, display:'block', color:'white', fontSize:20, border :'#41C1BA 2px solid', borderRadius:20 }}>
+    <div style={leftco ? {padding:20 , width : 300, backgroundColor:'black', display:'none'} : {padding:20 ,transition:1, backgroundColor:'black',width : 300, height:200, display:'block', color:'white', fontSize:20, boxShadow:'#BF00FF 5px 5px 5px 5px', borderRadius:20 }}>
        {s1 ? <div>
           <div style={{display:'flex',alignItems:'center',justifyContent:'space-around'}}>
             <p>HTML</p>

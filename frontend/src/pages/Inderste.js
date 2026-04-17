@@ -47,45 +47,16 @@ const Inderste = () => {
   }
   return (
     <div>
-       <div className='anss mt-80'>
+       <div className='anss mt-60'>
             <h1 className='text-5xl text-center text-white'>Industries We Serve Web Development & Digital Solutions</h1>
             <h2 className='text-4xl text-center text-white mt-5 mb-4'>Industries We Support with Digital Solutions</h2>
             <h3 className='text-2xl text-center text-white'>Healthcare and Medical Industry</h3>
         </div>
-      <div className="container">
-            <img
-              src={robot}
-              alt="Robot"
-              className={`robot`}
-              style={{width:300,height:300,}}
-              id='id7'
-            />
-            <div>
-            </div>
-          </div>
-      <div className='jit'>
-          <button className='btns' onClick={speak2}>Startups</button>
-          <br/>
-          <br/>
-          <button className='btns' onClick={speak}>Small & Medium Businesses</button>
-          <br/>
-          <br/>
-          <button className='btns' onClick={speak3}>E-commerce</button>
-      </div>
-      <br></br>
-      <div className='jit'>
-          <div style={{width:300}}>
-            <p style={{width:200, color:'#f7f7f7'}}>Deeshix Technology partner with startup organizations to transform ideas into impactful digital products. From MVP development to full-scale websites and e-commerce platforms, I create flexible, scalable, and performance-driven solutions that help startups launch faster, attract users, and grow confidently in competitive markets.</p>
-          </div>
-          <div style={{width:300}}>
-            <br></br>
-            <p style={{width:200,color:'#f7f7f7'}}>Deeshix Technology work closely with startups and small to medium enterprises (SMEs) to design and develop modern, scalable websites that support business growth. From idea-stage startups to established SMEs, I provide customized digital solutions that enhance brand identity.</p>
-          </div>
-          <div style={{width:300}}>
-            <br></br>
-            <p style={{width:200,color:'#f7f7f7'}}>As a professional web developer, deeshix Technology specialize in building powerful and user-friendly e-commerce solutions for businesses of all sizes. I help startups, small and medium businesses, and growing brands establish a strong online presence with secure, scalable, and conversion-focused e-commerce websites.</p>
-          </div>
-      </div>
+        <br>
+        </br>
+        <br/>
+        <br/>
+        <br/>
       <Callus/>
     </div>
   )

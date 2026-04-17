@@ -46,7 +46,7 @@ const [sty,setsty] = useState(false)
             <div  style={{ width: 320, height: 320,}}>
                 <br/>
                 <br/>
-                <h1 className={`text-2xl clor ${sty? "typings" : ""}`}>DEESHIX technology</h1>
+                <h1 className={`text-2xl ${sty? "typings" : ""}`} style={{color : 'yellow'}}>DEESHIX technology</h1>
                 <br/>
                 
                 <p style={{ display: 'flex', textAlign:'center', alignItems: 'center', columnGap: 10, color:'#f7f7f7', }}><FaMailBulk /> : deeshiss@deeshix.com</p>

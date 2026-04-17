@@ -100,7 +100,7 @@ const [formData, setFormData] = useState({
    <>
     <nav className='navbar z-50'>
        <div>
-          <img src={logo} className='w-[140px] h-[170px]' style={{borderRadius:265}}/>
+          <img src={logo} className='w-[120px] h-[120px]' style={{borderRadius:265}}/>
        </div>
        <div className='nav-sub'>
           <Link onClick={()=> window.location.href='/'}>
@@ -134,7 +134,7 @@ const [formData, setFormData] = useState({
          <div>
           <p onMouseOver={lci}>Services</p>
           {textuis ? <div className='id-div' onMouseLeave={lici2}>
-              <Link to={"/Web-devlopement"} onClick={()=> window.location.href='/web-devlopement'}>
+              <Link to={"/Web-devlopement"} onClick={()=> window.location.href='/web-development'}>
                   <p onClick={()=> window.speechSynthesis.cancel()}>Web development</p>
                </Link>
                <Link to={"/mobile-development"} onClick={()=> window.location.href='/mobile-development'}>
