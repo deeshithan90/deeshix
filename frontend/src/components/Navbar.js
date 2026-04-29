@@ -186,7 +186,7 @@ const [formData, setFormData] = useState({
     name="describe"
     placeholder="Describe Your needs"
     onChange={handleChange}
-    style={{ width:250, padding:25 }}
+    style={{ width:250, padding:25 , color : 'black'}}
   />
 <br/>
 <br/>
