@@ -115,13 +115,13 @@ const Home = ({ sett }) => {
 
   return (
     <>
-      <div className="mt-60">
-        <div className="container mb-0 z-0 flexss mt-80 p-4">
+      <div className="mt-20">
+        <div className="container mb-0 z-0 flexss mt-80 p-0">
           <a href="/Web-devlopement"><img
             src={robot}
             alt="Advance Latest Technology"
             className={`robot ${isTalking ? "walking" : ""}`}
-            style={{ width: 440, height: 260, }}
+            style={{ width: 440, height: 240, }}
           /></a>
           <div className="p-3">
             <button onClick={speak} className="speak-btn">
@@ -133,38 +133,48 @@ const Home = ({ sett }) => {
               Founder voice
             </button>
           </div>
-          <div className="p-4">
+          <div className="p-1">
             <h1 className="text-5xl ans">The Best Web Development Company in Chennai Tamil Nadu India</h1>
           </div>
         </div>
+        <center>
+          <div className="iut">
+
+          </div>
+          <br/>
+          <br/>
+          <h1 className="text-4xl ans">
+            Specialized in Mobile app and Ecommerce
+          </h1>
+        </center>
         {text ? <div class="marquee">
           <p>
-            Hello human. Welcome to Deeshix Technology, 
-      your trusted partner for innovative and result-driven 
-      web development solutions in Chennai, Tamil Nadu, India. 
-      We specialize in creating modern, responsive,
-       and high-performing websites that help businesses grow digitally.
+            Hello human. Welcome to Deeshix Technology,
+            your trusted partner for innovative and result-driven
+            web development solutions in Chennai, Tamil Nadu, India.
+            We specialize in creating modern, responsive,
+            and high-performing websites that help businesses grow digitally.
           </p>
         </div>
           : <div></div>}
         {InnerText ? <div class="marquee">
           <p>
-            Meet Deeshithan Sathish - 
-            Founder of Deeshix Technology, I am 12 years 
-            old self-taught MERN stack developer specialized in MongoDB, 
-            Express.js , React.js Node.js Mongoose ODM TanstackQuery , JWT , 
-            dotenv, cookieparser, Java script Type script , css , html, tailwindcss python, 
+            Meet Deeshithan Sathish -
+            Founder of Deeshix Technology, I am 12 years
+            old self-taught MERN stack developer specialized in MongoDB,
+            Express.js , React.js Node.js Mongoose ODM TanstackQuery , JWT ,
+            dotenv, cookieparser, Java script Type script , css , html, tailwindcss python,
             Django. Hi, I’m Deeshithan Sathish Young Full-Stack (MERN) Developer & Future
-             AI Engineer Chennai, Tamil Nadu, India 🇮🇳. I build modern, responsive, and scalable 
-             web and mobile applications using industry-standard technologies. 
-             I have successfully delivered real client portfolio projects 
+            AI Engineer Chennai, Tamil Nadu, India 🇮🇳. I build modern, responsive, and scalable
+            web and mobile applications using industry-standard technologies.
+            I have successfully delivered real client portfolio projects
             independently and continuously expand my skills into AI-powered applications.
           </p>
         </div> : <div></div>}
       </div>
-      <div className="mt-10 p-10">
+      <div className="mt-20 p-10">
         <h2 className="text-2xl  csaa">About Us</h2>
-        <h3 className="lg:text-3xl font-bold mt-10 ml-10 w-[500px]">Deeshix Technology - Leading Web Development Company in Chennai</h3>
+        <h3 className="lg:text-3xl font-bold mt-10 ml-10 w-[500px] kls">Deeshix Technology - A Leading Web Development Company in Chennai Tamil Nadu. </h3>
         <p className="mt-10 text-[20px] text-left w-3/4 ml-10">
           Welcome to Deeshix Technology,
           your trusted partner for innovative and
@@ -173,7 +183,7 @@ const Home = ({ sett }) => {
           responsive, and high-performing websites that help businesses
           grow digitally.
         </p>
-        <h3 className="lg:text-3xl lg:font-bold lg:mt-10 ml-10 lg:w-[400px]">Build Your Digital Presence with Experts</h3>
+        <h3 className="lg:text-3xl lg:font-bold lg:mt-10 ml-10 lg:w-[400px] kls">Build Your Digital Presence with Experts</h3>
         <p className="mt-10 text-[20px] text-left w-3/4 ml-10">
           At Deeshix Technology,
           we design and develop websites that are not just visually appealing

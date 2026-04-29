@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaLeaf, FaNodeJs, FaReact, FaServer, FaUser } from 'react-icons/fa'
-import { BiLogoMongodb } from 'react-icons/bi'
+import { BiLogoMongodb, BiLogoPython, BiUser } from 'react-icons/bi'
 
 const CoreExpertise = () => {
     return (
@@ -43,6 +43,14 @@ const CoreExpertise = () => {
             <div className='flex gap-4'>
                 <BiLogoMongodb size={20}/>
                 <p onClick={()=> window.location.href='/technology'} style={{color:'white',cursor:'pointer'}}>Mongoose ODM</p>
+            </div>
+            <div className='flex gap-4'>
+                <BiUser size={20}/>
+                <p onClick={()=> window.location.href='/technology'} style={{color:'white',cursor:'pointer'}}>AI</p>
+            </div>
+            <div className='flex gap-4'>
+                <BiLogoPython size={20}/>
+                <p onClick={()=> window.location.href='/technology'} style={{color:'white',cursor:'pointer'}}>Python</p>
             </div>
         </div>
         </>

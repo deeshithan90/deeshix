@@ -134,7 +134,7 @@ const [formData, setFormData] = useState({
          <div>
           <p onMouseOver={lci}>Services</p>
           {textuis ? <div className='id-div' onMouseLeave={lici2}>
-              <Link to={"/Web-devlopement"} onClick={()=> window.location.href='/web-development'}>
+              <Link to={"/web-development"} onClick={()=> window.location.href='/web-development'}>
                   <p onClick={()=> window.speechSynthesis.cancel()}>Web development</p>
                </Link>
                <Link to={"/mobile-development"} onClick={()=> window.location.href='/mobile-development'}>
@@ -233,8 +233,8 @@ const [formData, setFormData] = useState({
             <p className='tex' onClick={()=> setuis7(true)}>Services</p>
             {uis7 ? <div className='bg'> 
                <br/>
-              <Link to={"/web-devlopement"} onClick={()=> window.speechSynthesis.cancel()}>
-                  <p style={{color:'white'}} onClick={()=> window.location.href='/web-devlopement'}>Web development</p>
+              <Link to={"/web-development"} onClick={()=> window.speechSynthesis.cancel()}>
+                  <p style={{color:'white'}} onClick={()=> window.location.href='/web-development'}>Web development</p>
                </Link>
                <br/>
                <Link to={"/mobile-development"} onClick={()=> window.speechSynthesis.cancel()}>

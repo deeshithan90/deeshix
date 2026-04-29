@@ -175,6 +175,7 @@ body {
   transition: 1s;
   background-color: black;
   border-radius: 10px;
+  box-shadow: #BF00FF 2px 2px 2px 2px;
 }
 .ans{
   animation:blinks 8s infinite;
@@ -197,7 +198,7 @@ body {
 }
 
 .speak-btn{
-   box-shadow: #BF00FF 5px 5px 5px 5px;
+   box-shadow: #BF00FF 3px 3px 3px 3px;
 }
 .marquee {
   width: 100%;
@@ -484,6 +485,12 @@ html {
   padding: 30px;
 }
 
+
+.iut{
+    border-top: #BF00FF 2px solid;
+    width: 200px;
+}
+
 .ju{
   width: 250px;
   background-color: whitesmoke;
@@ -548,9 +555,18 @@ html {
   display: grid;
   grid-template-columns: 2fr 2fr; /* 3 equal columns */
   gap: 20px; /* space between items */
-  padding: 30px;
+  padding: 40px;
   font-size: 20px;
   margin-left: 40px;
+}
+
+.mt-ss{
+   margin-top: 140px;
+}
+
+
+.kls{
+  color: #CCFF00;
 }
 .io{
   margin-top: 250px;

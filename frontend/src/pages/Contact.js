@@ -20,8 +20,11 @@ const [sty,setsty] = useState(false)
   };
     return (
         <> 
-         <div className='anss mt-80'>
-            <h1 className='text-5xl text-center text-white'>Contact Deeshix Technology Website Development & Digital Solutions</h1>
+         <div className='anss mt-ss'>
+            <h1 className='text-5xl text-center text-white'>Contact Deeshix Technology</h1>
+            <br/>
+            <h1 className='text-5xl text-center text-white'>Website Development & Digital Solutions</h1>
+            <br/>
             <h2 className='text-4xl text-center text-white'>Phone Number : +91 81481 81929</h2>
             <h3 className='text-2xl text-center text-white'>Madambakkam, Chennai – 600126</h3>
         </div>
@@ -48,7 +51,6 @@ const [sty,setsty] = useState(false)
                 <br/>
                 <h1 className={`text-2xl ${sty? "typings" : ""}`} style={{color : 'yellow'}}>DEESHIX technology</h1>
                 <br/>
-                
                 <p style={{ display: 'flex', textAlign:'center', alignItems: 'center', columnGap: 10, color:'#f7f7f7', }}><FaMailBulk /> : deeshiss@deeshix.com</p>
                 <p className='' style={{ display: 'flex', alignItems: 'center', columnGap: 10,color:'#f7f7f7', }}><FaPhone /> : (+91) 8148181929</p>
                 <p className='' style={{ display: 'flex', alignItems: 'center', columnGap: 10 ,color:'#f7f7f7'}}><FaInternetExplorer /> : www.deeshix.com</p>
