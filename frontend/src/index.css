@@ -560,6 +560,13 @@ html {
   margin-left: 40px;
 }
 
+.gh77{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80;
+}
+
 .mt-ss{
    margin-top: 140px;
 }
@@ -912,6 +919,14 @@ html {
   }
 
 
+  .sty{
+     width: 1100;
+  }
+
+.gh77{
+   display: block;
+    width: 100%;
+}
 
   .jit{
     display: block;

@@ -3,6 +3,7 @@ import robot from "../images/Robo.png";
 import WhyChooseus from "../components/WhyChoose us";
 import Callus from "../components/Call-us";
 import CoreExpertise from "../components/CoreExpertise";
+import e3 from '../images/e3logo.png'
 
 const Home = ({ sett }) => {
   const [isTalking, setIsTalking] = useState(false);
@@ -116,7 +117,21 @@ const Home = ({ sett }) => {
   return (
     <>
       <div className="mt-20">
-        <div className="container mb-0 z-0 flexss mt-80 p-0">
+        <center>
+          <div className="bg-white sty" style={{ marginTop: 140,  borderRadius: 20, boxShadow: 'pink 5px 5px 5px 5px' }}>
+            <h1 style={{ fontSize: 50, color: 'black' }}>Our Ongoing project</h1>
+            <div className="gh77">
+              <div>
+                <img src={e3} style={{ width: 300, height: 230 }} />
+              </div>
+              <div style={{ color: 'black', width: 300 }}>
+                This project aims to simplify employee management using artificial intelligence and modern automation technologies.
+              </div>
+            </div>
+          </div>
+        </center>
+
+        <div className="container mb-0 z-0 flexss mt-0 p-0">
           <a href="/Web-devlopement"><img
             src={robot}
             alt="Advance Latest Technology"
@@ -141,8 +156,8 @@ const Home = ({ sett }) => {
           <div className="iut">
 
           </div>
-          <br/>
-          <br/>
+          <br />
+          <br />
           <h1 className="text-4xl ans">
             Specialized in Mobile app and Ecommerce
           </h1>
