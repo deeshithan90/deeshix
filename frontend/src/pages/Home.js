@@ -118,7 +118,7 @@ const Home = ({ sett }) => {
     <>
       <div className="mt-20">
         <center>
-          <div className="bg-white sty" style={{ marginTop: 140,  borderRadius: 20, boxShadow: 'pink 5px 5px 5px 5px' }}>
+          <div className="bg-white sty" style={{ marginTop: 140,  borderRadius: 20, boxShadow: '#BF00FF 5px 5px 5px 5px' }}>
             <h1 style={{ fontSize: 50, color: 'black' }}>Our Ongoing project</h1>
             <div className="gh77">
               <div>
