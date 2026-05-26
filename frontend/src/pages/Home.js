@@ -113,12 +113,142 @@ const Home = ({ sett }) => {
     recognition.start()
   }
 
+  const faqData = [
+    {
+      question: "What is Deeshix Technology?",
+      answer:
+        "Deeshix Technology is a technology startup focused on web development, mobile app development, UI/UX design, MERN stack applications, and custom software solutions for businesses and startups."
+    },
+    {
+      question: "Who founded Deeshix Technology?",
+      answer:
+        "Deeshix Technology was founded by Deeshithan Sathish, a young technology innovator and full-stack developer from Chennai."
+    },
+    {
+      question: "What services does Deeshix Technology provide?",
+      answer:
+        "Website Development Mobile App Development MERN Stack Development E-Commerce Development HRMS Software Development UI/UX Design SEO Optimization Business Portfolio Websites Hosting & Deployment Support."
+    },
+    {
+      question: "Which technologies are used by Deeshix Technology?",
+      answer:
+        "React.js React Native Node.js Express.js MongoDB JavaScript Python HTML/CSS Firebase Git & GitHub Website & App Development."
+    },
+    {
+      question: "Does Deeshix Technology develop mobile apps?",
+      answer:
+        "Yes. Deeshix Technology develops Android and cross-platform mobile applications using React Native."
+    },
+    {
+      question: "Can Deeshix Technology build HRMS applications?",
+      answer:
+        "Yes. The company is developing professional HRMS applications for small and medium organizations with features like Employee Management Attendance Tracking Leave Management Payroll Overview Notifications Employee Dashboard."
+    },
+    {
+      question: "Do you create business websites?",
+      answer:
+        "Yes. Business portfolio websites, corporate websites, and service-based websites are developed with modern responsive design."
+    },
+    {
+      question: "Will my website be mobile-friendly?",
+      answer:
+        "Yes. All websites are fully responsive and optimized for mobile, tablet, and desktop devices."
+    },
+    {
+      question: "Do you provide website redesign services?",
+      answer:
+        "Yes. Existing websites can be redesigned with modern UI/UX and improved performance."
+    },
+    {
+      question: "Can you develop e-commerce websites?",
+      answer:
+        "Yes. Deeshix Technology develops online shopping websites with Product Management Cart & Checkout Payment Gateway Integration Order Tracking Admin Dashboard."
+    },
+    {
+      question: "Do you provide hosting support?",
+      answer:
+        "Yes. Hosting setup and deployment support are available."
+    },
+    {
+      question: "Will SEO be included in the website?",
+      answer:
+        "Basic SEO optimization is included for better Google visibility."
+    },
+    {
+      question: "Do you provide maintenance after project completion?",
+      answer:
+        "Yes. Technical support and maintenance services are available after deployment."
+    },
+    {
+      question: "Can clients request custom features?",
+      answer:
+        "Yes. Every project can be customized according to business requirements."
+    },
+    {
+      question: "Is source code provided after completion?",
+      answer:
+        "Yes. Clients can receive project source code after successful completion and payment."
+    },
+    {
+      question: "How much does a website cost?",
+      answer:
+        "Pricing depends on Number of pages Features required Design complexity Admin panel requirements Hosting & maintenance."
+    },
+    {
+      question: "How long does development take?",
+      answer:
+        "Portfolio Website 3–7 days Business Website 1–3 weeks Mobile App 2–8 weeks HRMS Software depends on modules and features."
+    },
+    {
+      question: "Can startups work with Deeshix Technology?",
+      answer:
+        "Yes. Startup-friendly pricing and scalable solutions are available."
+    },
+    {
+      question: "Do you work with clients outside Chennai?",
+      answer:
+        "Yes. Remote development services are available across India and internationally."
+    },
+    {
+      question: "How can I contact Deeshix Technology?",
+      answer:
+        "You can contact through Official Website Deeshix Technology Official Website LinkedIn Deeshix Technology LinkedIn."
+    },
+    {
+      question: "Is client data kept secure?",
+      answer:
+        "Yes. Client information and project data are handled securely and professionally."
+    },
+    {
+      question: "Do you use modern development practices?",
+      answer:
+        "Yes. Projects follow Responsive Design Clean Code Structure Performance Optimization Security Best Practices Version Control with Git."
+    },
+    {
+      question: "Can Deeshix Technology help small businesses digitize operations?",
+      answer:
+        "Yes. The company focuses on helping small and medium businesses adopt modern digital solutions affordably."
+    },
+    {
+      question: "What is the future goal of Deeshix Technology?",
+      answer:
+        "The goal is to become a global technology brand delivering innovative digital solutions in Software Development Artificial Intelligence Mobile Applications Business Automation Cybersecurity Cloud Solutions."
+    },
+    {
+      question: "Why choose Deeshix Technology?",
+      answer:
+        "Modern Technology Stack Creative UI/UX Startup-Friendly Approach Fast Development Affordable Pricing Professional Support Innovative Young Leadership."
+    }
+  ];
+
+  const [openFaq, setOpenFaq] = useState(null);
+
 
   return (
     <>
       <div className="mt-20">
         <center>
-          <div className="bg-white sty" style={{ marginTop: 140,  borderRadius: 20, boxShadow: '#BF00FF 5px 5px 5px 5px' }}>
+          <div className="bg-white sty" style={{ marginTop: 140, borderRadius: 20, boxShadow: '#BF00FF 5px 5px 5px 5px' }}>
             <h1 style={{ fontSize: 50, color: 'black' }}>Our Ongoing project</h1>
             <div className="gh77">
               <div>
@@ -159,7 +289,7 @@ const Home = ({ sett }) => {
           <br />
           <br />
           <h1 className="text-4xl ans">
-            Specialized in Mobile app and Ecommerce
+            Specialized in Web and Mobile app , Ecommerce and HRMS
           </h1>
         </center>
         {text ? <div class="marquee">
@@ -189,7 +319,7 @@ const Home = ({ sett }) => {
       </div>
       <div className="mt-20 p-10">
         <h2 className="text-2xl  csaa">About Us</h2>
-        <h3 className="lg:text-3xl font-bold mt-10 ml-10 w-[500px] kls">Deeshix Technology - A Leading Web Development Company in Chennai Tamil Nadu. </h3>
+        <h3 className="lg:text-3xl font-bold mt-10 ml-10 w-[300px] kls">Deeshix Technology - A Leading Web Development Company  </h3>
         <p className="mt-10 text-[20px] text-left w-3/4 ml-10">
           Welcome to Deeshix Technology,
           your trusted partner for innovative and
@@ -198,6 +328,7 @@ const Home = ({ sett }) => {
           responsive, and high-performing websites that help businesses
           grow digitally.
         </p>
+        <br/>
         <h3 className="lg:text-3xl lg:font-bold lg:mt-10 ml-10 lg:w-[400px] kls">Build Your Digital Presence with Experts</h3>
         <p className="mt-10 text-[20px] text-left w-3/4 ml-10">
           At Deeshix Technology,
@@ -223,7 +354,35 @@ const Home = ({ sett }) => {
           </p>
         </div>
       </div>
+
       <Callus />
+
+      <div className="faq-section">
+        <h1 className="faq-title">FAQ</h1>
+
+        {faqData.map((faq, index) => (
+          <div
+            key={index}
+            className={`faq-card ${openFaq === index ? "activeFaq" : ""}`}
+            onClick={() =>
+              setOpenFaq(openFaq === index ? null : index)
+            }
+          >
+            <div className="faq-question">
+              <h2>{faq.question}</h2>
+              <span>{openFaq === index ? "-" : "+"}</span>
+            </div>
+
+            <div
+              className={`faq-answer ${openFaq === index ? "showFaq" : ""
+                }`}
+            >
+              <p>{faq.answer}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
     </>
   );
 }

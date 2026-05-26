@@ -1,60 +1,169 @@
-import React from 'react'
-import { FaLeaf, FaNodeJs, FaReact, FaServer, FaUser } from 'react-icons/fa'
-import { BiLogoMongodb, BiLogoPython, BiUser } from 'react-icons/bi'
+import React, { useState } from 'react'
+import {
+  FaNodeJs,
+  FaReact,
+  FaServer,
+  FaUser
+} from 'react-icons/fa'
+
+import {
+  BiLogoMongodb,
+  BiLogoPython,
+  BiUser
+} from 'react-icons/bi'
 
 const CoreExpertise = () => {
-    return (
-        <>
-        <h2 className='text-2xl csaa mt-10 ml-9'>Core Expertise</h2>
-        <div className='grids mt-10'>
-            {/**MongoDB*/}
-            <div className='flex gap-4'>
-                <BiLogoMongodb size={20} />
-                <p onClick={()=> window.location.href='/technology'} style={{color:'white',cursor:'pointer'}}>MongoDB</p>
-            </div>
-            {/**Express.js*/}
-            <div className='flex gap-4'>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="20" height="20">
-                    <path fill="white" d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64 64-28.7 64-64S99.3 0 64 0zm0 8c30.9 0 56 25.1 56 56s-25.1 56-56 56S8 94.9 8 64 33.1 8 64 8zm-27.8 31.4c-1.6 0-2.9 1.3-2.9 2.9v43.4c0 1.6 1.3 2.9 2.9 2.9h25.6c1.6 0 2.9-1.3 2.9-2.9v-5.8c0-1.6-1.3-2.9-2.9-2.9H43.1V67h16.8c1.6 0 2.9-1.3 2.9-2.9v-5.8c0-1.6-1.3-2.9-2.9-2.9H43.1V45.9h18.7c1.6 0 2.9-1.3 2.9-2.9v-5.8c0-1.6-1.3-2.9-2.9-2.9H36.2zm54.6 0c-1.1 0-2.1.6-2.6 1.5L77.6 63.8 88.2 84c.5.9 1.5 1.5 2.6 1.5h6.6c2.3 0 3.7-2.5 2.6-4.5L87.5 64l12.5-17c1.4-1.9 0-4.5-2.3-4.5h-6.9z" />
-                </svg>
-                <p onClick={()=> window.location.href='/technology'} style={{color:'white',cursor:'pointer'}}>Express.js</p>
-            </div>
-            {/**React.js*/}
-            <div className='flex gap-4'>
-                <FaReact size={20}/>
-                <p onClick={()=> window.location.href='/technology'} style={{color:'white',cursor:'pointer'}}>React.js</p>
-            </div>
-            {/**Node.js*/}
-            <div className='flex gap-4'>
-                <FaNodeJs size={20}/>
-                <p onClick={()=> window.location.href='/technology'} style={{color:'white',cursor:'pointer'}}>Node.js</p>
-            </div>
-            {/**REST API Development*/}
-            <div className='flex gap-4'>
-                <FaServer size={20} />
-                <p onClick={()=> window.location.href='/technology'} style={{color:'white',cursor:'pointer'}}> REST API</p>
-            </div>
-            {/**JWT*/}
-            <div className='flex gap-4'>
-                <FaUser size={20}/>
-                <p onClick={()=> window.location.href='/technology'} style={{color:'white',cursor:'pointer'}}>JWT</p>
-            </div>
-            {/**Database Modeling with Mongoose ODM*/}
-            <div className='flex gap-4'>
-                <BiLogoMongodb size={20}/>
-                <p onClick={()=> window.location.href='/technology'} style={{color:'white',cursor:'pointer'}}>Mongoose ODM</p>
-            </div>
-            <div className='flex gap-4'>
-                <BiUser size={20}/>
-                <p onClick={()=> window.location.href='/technology'} style={{color:'white',cursor:'pointer'}}>AI</p>
-            </div>
-            <div className='flex gap-4'>
-                <BiLogoPython size={20}/>
-                <p onClick={()=> window.location.href='/technology'} style={{color:'white',cursor:'pointer'}}>Python</p>
-            </div>
+
+  const [selectedCategory, setSelectedCategory] = useState('Frontend')
+
+  const technologies = {
+    Frontend: [
+      {
+        name: 'React.js',
+        icon: <FaReact size={24} color="#61DBFB" />
+      }
+    ],
+
+    Backend: [
+      {
+        name: 'Node.js',
+        icon: <FaNodeJs size={24} color="#68A063" />
+      },
+      {
+        name: 'Express.js',
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 128 128"
+            width="24"
+            height="24"
+          >
+            <path
+              fill="#ffffff"
+              d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64 64-28.7 64-64S99.3 0 64 0z"
+            />
+          </svg>
+        )
+      },
+      {
+        name: 'REST API',
+        icon: <FaServer size={24} color="#f59e0b" />
+      },
+      {
+        name: 'JWT',
+        icon: <FaUser size={24} color="#ec4899" />
+      }
+    ],
+
+    Database: [
+      {
+        name: 'MongoDB',
+        icon: <BiLogoMongodb size={24} color="#47A248" />
+      },
+      {
+        name: 'Mongoose ODM',
+        icon: <BiLogoMongodb size={24} color="#47A248" />
+      }
+    ],
+
+    Programming: [
+      {
+        name: 'Python',
+        icon: <BiLogoPython size={24} color="#3776AB" />
+      }
+    ],
+
+    AI: [
+      {
+        name: 'Artificial Intelligence',
+        icon: <BiUser size={24} color="#8b5cf6" />
+      }
+    ]
+  }
+
+  return (
+    <div className="mt-10 px-6 mb-20">
+
+      <h2 className="text-2xl  csaa mb-20">Core Expertise</h2>
+
+      <div className="flex flex-col md:flex-row gap-8">
+
+        {/* Sidebar */}
+        <div className="w-full md:w-1/4">
+
+          <div className="shadowss rounded-2xl p-4 border border-gray-700">
+
+            {Object.keys(technologies).map((category, index) => (
+              <div
+                key={index}
+                onClick={() => setSelectedCategory(category)}
+                className={`
+                  p-4
+                  rounded-xl
+                  mb-3
+                  cursor-pointer
+                  transition-all duration-300
+                  text-lg
+                  font-medium
+                  ${
+                    selectedCategory === category
+                      ? 'text-white shadowss'
+                      : 'text-white shadowss-h'
+                  }
+                `}
+              >
+                {category}
+              </div>
+            ))}
+
+          </div>
+
         </div>
-        </>
-    )
+
+        {/* Technology Content */}
+        <div className="w-full md:w-3/4">
+
+          <div className="shadowss rounded-2xl p-6 border border-gray-700">
+
+            <h3 className="text-2xl csaa mb-10">
+              {selectedCategory} Technologies
+            </h3>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+              {technologies[selectedCategory].map((tech, index) => (
+                <div
+                  key={index}
+                  className="
+                    shadowss
+                    p-5
+                    rounded-xl
+                    hover:bg-[#374151]
+                    transition-all duration-300
+                    cursor-pointer
+                    w-[300px]
+                  "
+                >
+                  {tech.icon}
+
+                  <br/>
+
+                  <p className="text-white text-lg">
+                    {tech.name}
+                  </p>
+                </div>
+              ))}
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  )
 }
 
 export default CoreExpertise

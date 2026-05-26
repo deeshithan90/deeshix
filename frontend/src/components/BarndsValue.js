@@ -13,7 +13,7 @@ const BarndsValue = () => {
               </div>
               <br></br>
               <br></br>
-              <div className='w-[500px]'>
+              <div className='w-[370px]'>
                 <h3 className='text-2xl' style={{color:'#CCFF00'}}>Innovation & Modern Technology</h3>
                 <br></br>
                 <p className='md:w-1/2 lg:w-1/2 sm:w-full' style={{color:'#f7f7f7'}}>We stay ahead of trends and continuously adopt the latest web technologies to create future-ready digital experiences.</p>
