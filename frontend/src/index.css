@@ -565,9 +565,12 @@ html {
 }
 
 .deeshi{
-   width: 300px;
-   height: 300px;
+   width: 400px;
+   height: 400px;
    border-radius: 500px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .fg{
@@ -831,9 +834,6 @@ html {
 .w-fulls{
   width: 100%;
 }
-.deeshi{
-  width: 800px;
-}
 
   .grids{
      display: block;
@@ -1005,8 +1005,9 @@ html {
   }
 
   .deeshi {
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px ;
   }
 
   .mg{

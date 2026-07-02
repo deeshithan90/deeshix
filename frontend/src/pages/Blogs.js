@@ -1,6 +1,6 @@
 import blog from '../images/images/blog1.webp'
 import blog2 from '../images/images/blog2.webp'
-import blog3 from '../images/images/blog3.webp'
+import blog3 from '../images/images/mern.png'
 
 const Blogs = () => {
     return (
@@ -34,11 +34,12 @@ const Blogs = () => {
             <br />
             <br />
             <div className='flexs w-full justifiy-center gap-40 mt-0 p-16 ml-0'>
-                <img src={blog3} className='w-[350px] h-[300px]' />
+                <img src={blog3} className='w-[350px] h-[350px]' />
                 <div>
-                    <h1 className='text-whites mb-10 lg:w-[600px] text-2xl xxs text-center'>The Future of Digital Development</h1>
+                    <h1 className='text-whites mb-10 lg:w-[600px] text-2xl xxs text-center'>MERN Stack Roadmap: Become a Full Stack Developer from Scratch</h1>
                     <p className='w-full'>
-                        With expertise in MERN Stack, mobile app development, Python, and cybersecurity, Deeshix continues to explore next-generation technologies. The vision is to build secure, innovative, and impactful digital experiences for the modern world.
+                        The demand for Full Stack Developers continues to grow as businesses increasingly rely on modern web applications. Among the many technology stacks available today, the MERN Stack stands out as one of the most popular and powerful choices for building scalable, high-performance applications.
+                       Whether you're a student, a career changer, or an aspiring software developer, this roadmap will help you understand exactly what to learn, in what order, and how to become a confident MERN Stack Developer from scratch.
                     </p>
                 </div>
             </div>

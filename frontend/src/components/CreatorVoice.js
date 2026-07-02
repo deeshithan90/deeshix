@@ -1,13 +1,16 @@
 import React from 'react'
-import deeshi from '../images/deeshi.png'
+import deeshi from '../images/deeshi.jpeg'
 const CreatorVoice = () => {
   return (
     <div className='p-3'>
       <h2 className='ml-10 text-3xl csaa'>Founder</h2>
       <br></br>
+      <br/>
       <div className='about'>
         <div>
+          <center>
           <img src={deeshi} className='deeshi' />
+          </center>
         </div>
         <br />
         <br />
