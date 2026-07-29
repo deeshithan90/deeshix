@@ -15,6 +15,7 @@ import Requests from './pages/Request';
 import Blogs from './pages/Blogs';
 import Webdevlopement from './pages/Webdevlopement';
 import ChatBOT from './components/ChatBOT';
+import OnGoingProject from './pages/OneGoingProject';
 function App() {
   const [ui, setui] = useState(false)
   return (
@@ -50,6 +51,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/request' element={<Requests />} />
           <Route path='/blogs' element={<Blogs />} />
+          <Route path='/ongoingproject' element={<OnGoingProject/>}/>
 
           {/* ✅ 404 Page */}
           <Route

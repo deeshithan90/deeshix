@@ -3,7 +3,9 @@ import robot from "../images/Robo.png";
 import WhyChooseus from "../components/WhyChoose us";
 import Callus from "../components/Call-us";
 import CoreExpertise from "../components/CoreExpertise";
-import e3 from '../images/e3logo.png'
+import e3 from '../images/images/turw.png'
+import award1 from '../images/images/award1.jpeg'
+import award2 from '../images/images/award2.jpeg'
 
 const Home = ({ sett }) => {
   const [isTalking, setIsTalking] = useState(false);
@@ -246,20 +248,21 @@ const Home = ({ sett }) => {
 
   return (
     <>
-      <div className="mt-20">
-        <center>
-          <div className="bg-white sty" style={{ marginTop: 140, borderRadius: 20, boxShadow: '#BF00FF 5px 5px 5px 5px' }}>
-            <h1 style={{ fontSize: 50, color: 'black' }}>Our Ongoing project</h1>
-            <div className="gh77">
-              <div>
-                <img src={e3} style={{ width: 300, height: 230 }} />
-              </div>
-              <div style={{ color: 'black', width: 300 }}>
-                This project aims to simplify employee management using artificial intelligence and modern automation technologies.
-              </div>
-            </div>
-          </div>
-        </center>
+      <div className="mt-40">
+        
+        <div className="award">
+            <img src={award1} style={{width : 350,height : 350,borderRadius : 45}}/>
+            <br/>
+            <img src={award2} style={{width : 350,height : 350,borderRadius : 45}}/>
+        </div>
+
+<center>
+        <div>
+           <p style={{textAlign : 'center',fontWeight : 'bold',color : '#CCFF00',width : 650,marginTop : 20}}>
+              Founder of deeshix Technology Deeshithan Sathish recived an award for "AI Inovator & software devloper"
+           </p>
+        </div>
+</center>
 
         <div className="container mb-0 z-0 flexss mt-0 p-0">
           <a href="/Web-devlopement"><img
@@ -366,7 +369,7 @@ const Home = ({ sett }) => {
             className={`faq-card ${openFaq === index ? "activeFaq" : ""}`}
             onClick={() =>
               setOpenFaq(openFaq === index ? null : index)
-            }
+            } 
           >
             <div className="faq-question">
               <h2>{faq.question}</h2>

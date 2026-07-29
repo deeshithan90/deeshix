@@ -68,6 +68,14 @@ const [formData, setFormData] = useState({
       setui(false)
       window.speechSynthesis.cancel()
    }
+
+   function click11(){
+      sett(false)
+      settextui(false)
+      settextuis(false)
+      setui(false)
+      window.speechSynthesis.cancel()
+   }
    function click2(){
       settextui(true)
       settextuis(false)
@@ -151,6 +159,9 @@ const [formData, setFormData] = useState({
          <Link onClick={()=> window.location.href='/contact'}>
           <p onClick={()=> window.speechSynthesis.cancel()}>Contact</p>
          </Link>
+         <Link onClick={()=> window.location.href='/ongoingproject'}>
+             <p onClick={click11}>On Going Project</p>
+          </Link>
        </div>
        <div>
            <button  onClick={()=>{ setui(true)}}>Request Portfolio</button>
