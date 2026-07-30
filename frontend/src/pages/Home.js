@@ -258,7 +258,7 @@ const Home = ({ sett }) => {
 
 <center>
         <div>
-           <p style={{textAlign : 'center',fontWeight : 'bold',color : '#CCFF00',width : 650,marginTop : 20}}>
+           <p style={{textAlign : 'center',fontWeight : 'bold',color : '#CCFF00',width : 350,marginTop : 20}}>
               Founder of deeshix Technology Deeshithan Sathish recived an award for "AI Inovator & software devloper"
            </p>
         </div>

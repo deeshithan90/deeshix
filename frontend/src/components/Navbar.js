@@ -268,6 +268,10 @@ const [formData, setFormData] = useState({
             <Link to={"/Request"} onClick={()=> window.speechSynthesis.cancel()}>
             <p className='tex' style={{color:'white'}} onClick={()=> window.location.href='/Request'}>Request PortFolio</p>
             </Link>
+            <br/>
+            <Link onClick={()=> window.location.href='/ongoingproject'}>
+             <p className='tex'>On Going Project</p>
+          </Link>
         </div>
     </div>:""}
     </>
