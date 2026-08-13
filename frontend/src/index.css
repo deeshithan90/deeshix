@@ -18,8 +18,14 @@ body {
   background-color: black;
 }
 
-.award{
-  display : flex;
+.award-img{
+  width: 100px;
+  height: 100px;
+  border-radius: 45px;
+}
+
+.award {
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 40px;
@@ -168,6 +174,13 @@ body {
   display: flex;
   align-items: center;
   column-gap: 20px;
+}
+
+.award-img{
+   width: 300px;
+   height: 300px;
+   margin-top: 20px;
+   border-radius: 45px;
 }
 
 .flexs {
@@ -612,6 +625,15 @@ html {
   scroll-behavior: smooth;
 }
 
+.Parao{
+    text-align: 'center';
+    font-weight: 'bold';
+    font-size: 18;
+    color: 'white';
+    width: 250;
+    margin-top: 20
+}
+
 .sp {
   background-color: #41C1BA;
   font-size: 18px;
@@ -775,6 +797,13 @@ html {
   color: #CCFF00;
 }
 
+.full-award {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
 .io {
   margin-top: 250px;
   display: flex;
@@ -927,7 +956,7 @@ html {
     display: block;
   }
 
-  .award{
+  .award {
     display: block;
   }
 
@@ -939,7 +968,7 @@ html {
     display: block;
   }
 
-  .On-Going{
+  .On-Going {
     display: block;
   }
 
@@ -1065,6 +1094,11 @@ html {
     justify-content: center;
     margin-top: 190px;
     border: #41C1BA 2px solid;
+  }
+
+
+  .full-award {
+    display: block;
   }
 
   .sp {

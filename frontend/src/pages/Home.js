@@ -6,6 +6,8 @@ import CoreExpertise from "../components/CoreExpertise";
 import e3 from '../images/images/turw.png'
 import award1 from '../images/images/award1.jpeg'
 import award2 from '../images/images/award2.jpeg'
+import award3 from '../images/images/deeshithan-Sathish.webp'
+import award4 from '../images/images/deeshithan-Sathish2.webp'
 
 const Home = ({ sett }) => {
   const [isTalking, setIsTalking] = useState(false);
@@ -249,20 +251,28 @@ const Home = ({ sett }) => {
   return (
     <>
       <div className="mt-40">
-        
-        <div className="award">
-            <img src={award1} style={{width : 350,height : 350,borderRadius : 45}}/>
-            <br/>
-            <img src={award2} style={{width : 350,height : 350,borderRadius : 45}}/>
-        </div>
 
-<center>
-        <div>
-           <p style={{textAlign : 'center',fontWeight : 'bold',color : '#CCFF00',width : 350,marginTop : 20}}>
-              Founder of deeshix Technology Deeshithan Sathish recived an award for "AI Inovator & software devloper"
-           </p>
+        <div className="full-award">
+          <div>
+            <div className="award">
+              <img src={award1} alt="Deeshithan Sathish golden award 1" className="award-img" />
+              <img src={award2} alt="Deeshithan Sathish golden award 2" className="award-img" />
+            </div>
+            <br />
+
+            <div className="award">
+              <img src={award3} alt="Deeshithan Sathish National Excellence award 1" className="award-img" />
+              <img src={award4} alt="Deeshithan Sathish National Excellence award 2" className="award-img"/>
+            </div>
+          </div>
+          <div>
+            <div>
+              <p style={{textAlign : 'center',fontWeight : 'bold', fontSize : 18,color : 'white',width : 350,marginTop : 20}}>
+                Founder of deeshix Technology <span style={{color : '#CCFF00'}}>Deeshithan Sathish</span> was Honoured by the <span style={{color : '#CCFF00'}}>National Excellence Concil</span> for his passion, innvotation and remarkable contribution to technology at a young age.
+              </p>
+            </div>
+          </div>
         </div>
-</center>
 
         <div className="container mb-0 z-0 flexss mt-0 p-0">
           <a href="/Web-devlopement"><img
@@ -331,7 +341,7 @@ const Home = ({ sett }) => {
           responsive, and high-performing websites that help businesses
           grow digitally.
         </p>
-        <br/>
+        <br />
         <h3 className="lg:text-3xl lg:font-bold lg:mt-10 ml-10 lg:w-[400px] kls">Build Your Digital Presence with Experts</h3>
         <p className="mt-10 text-[20px] text-left w-3/4 ml-10">
           At Deeshix Technology,
@@ -369,7 +379,7 @@ const Home = ({ sett }) => {
             className={`faq-card ${openFaq === index ? "activeFaq" : ""}`}
             onClick={() =>
               setOpenFaq(openFaq === index ? null : index)
-            } 
+            }
           >
             <div className="faq-question">
               <h2>{faq.question}</h2>
