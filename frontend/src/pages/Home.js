@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import robot from "../images/Robo.png";
 import WhyChooseus from "../components/WhyChoose us";
 import Callus from "../components/Call-us";
@@ -247,10 +247,56 @@ const Home = ({ sett }) => {
 
   const [openFaq, setOpenFaq] = useState(null);
 
+  const [changeI,SetChangI] = useState(false)
+  const [moreless,setmoreless] = useState(false)
+
+  function Change(){
+      SetChangI(true)
+  }
+
+  useEffect(()=>{
+      if(changeI){
+          setTimeout(() => {
+              SetChangI(false)
+          },2000);
+      }
+      else{
+        setTimeout(() => {
+              SetChangI(true)
+          },2000);
+      }
+  },[changeI])
 
   return (
     <>
       <div className="mt-40">
+
+   <section className="flex flex-col md:flex-row items-center justify-between min-h-[60vh] bg-gradient-to-br from-blue-500 to-purple-600 p-12 rounded-2xl shadow-2xl mt-8 max-w-6xl mx-auto">
+     <div className="flex-1 text-center md:text-left text-white">
+       <h1 className="text-3xl font-extrabold mb-4">ANI NEWS | Published the Tamil Nadu awards | 10th August 2026</h1>
+       <p className="text-1xl mb-6">Deeshithan Sathish was featured among the 90+ achievers recognised at Tamilnadu Awards 2026 in Chennai. Organized by National Excellence Council He was listed as Award No. 85 and recognised with the Tamil Nadu Excellence Award for <span className="text-amber-300" style={{fontWeight : 'bold'}}>Young AI Innovator & Software Developer.</span></p>
+       {moreless ? <p className="text-1xl mb-6">The Awards ceremony was graced by popular actoress "Lila Mehdin" As the Chief Celebrity Guest, who felicitated the awardees and inspired the gathering with her words of encourangement. Award: National Excellence Council / Tamil Nadu Awards 2026
+Recognition: Tamil Nadu Excellence Award for Young AI Innovator & Software Developer
+Awardee: Deeshithan Sathish
+Award No.: 85
+ANI role: Published/distributed the report about the Tamilnadu Awards 2026
+Publication date: 10 August 2026</p> : ""}
+       {
+          moreless ? <button className="px-8 py-4 bg-white text-blue-700 rounded-lg font-bold shadow hover:bg-blue-50 transition" onClick={()=> setmoreless(false)}>Read Less</button> 
+          : 
+          <button className="px-8 py-4 bg-white text-blue-700 rounded-lg font-bold shadow hover:bg-blue-50 transition" onClick={()=> setmoreless(true)}>Read More</button>
+       }
+     </div>
+     <div className="flex-1 flex justify-center mt-8 md:mt-0">
+       <div className="w-80 h-64 rounded-xl flex items-center justify-center">
+          {changeI ? <img src={award4} alt="Deeshithan Sathish National Excellence award 1" className="award-img" /> : 
+          <img src={award3} alt="Deeshithan Sathish National Excellence award 2" className="award-img"/>}
+       </div>
+     </div>
+   </section>
+
+<br/>
+<br/>
 
         <div className="full-award">
           <div>
@@ -258,17 +304,11 @@ const Home = ({ sett }) => {
               <img src={award1} alt="Deeshithan Sathish golden award 1" className="award-img" />
               <img src={award2} alt="Deeshithan Sathish golden award 2" className="award-img" />
             </div>
-            <br />
-
-            <div className="award">
-              <img src={award3} alt="Deeshithan Sathish National Excellence award 1" className="award-img" />
-              <img src={award4} alt="Deeshithan Sathish National Excellence award 2" className="award-img"/>
-            </div>
           </div>
           <div>
             <div>
-              <p style={{textAlign : 'center',fontWeight : 'bold', fontSize : 18,color : 'white',width : 350,marginTop : 20}}>
-                Founder of deeshix Technology <span style={{color : '#CCFF00'}}>Deeshithan Sathish</span> was Honoured by the <span style={{color : '#CCFF00'}}>National Excellence Concil</span> for his passion, innvotation and remarkable contribution to technology at a young age.
+              <p style={{textAlign : 'center',fontWeight : 'bold', fontSize : 15,color : 'white',width : 350,marginTop : 20}}>
+                Founder of deeshix Technology <span style={{color : '#CCFF00'}}>Deeshithan Sathish</span> was Honoured by the <span style={{color : '#CCFF00'}}>Golden Entertainment</span> for his passion, innvotation and remarkable contribution to technology at a young age.The Awards ceremony was graced by popular dirctor "perarasu" As the Chief Guest, who felicitated the awardees and inspired the gathering with her words of encourangement
               </p>
             </div>
           </div>
@@ -292,7 +332,7 @@ const Home = ({ sett }) => {
             </button>
           </div>
           <div className="p-1">
-            <h1 className="text-5xl ans">The Best Web Development Company in Chennai Tamil Nadu India</h1>
+            <h1 className="text-5xl ans">The Best AI Innovation & Custom Software solution  in Chennai Tamil Nadu India</h1>
           </div>
         </div>
         <center>
@@ -302,7 +342,7 @@ const Home = ({ sett }) => {
           <br />
           <br />
           <h1 className="text-4xl ans">
-            Specialized in Web and Mobile app , Ecommerce and HRMS
+            Specialized in  AI & Emerging Technologies | Open-Source Developer | Building real-world software solutions & Exploring AI- Powered Web & Mobile application.
           </h1>
         </center>
         {text ? <div class="marquee">
@@ -332,7 +372,7 @@ const Home = ({ sett }) => {
       </div>
       <div className="mt-20 p-10">
         <h2 className="text-2xl  csaa">About Us</h2>
-        <h3 className="lg:text-3xl font-bold mt-10 ml-10 w-[300px] kls">Deeshix Technology - A Leading Web Development Company  </h3>
+        <h3 className="lg:text-3xl font-bold mt-10 ml-10 w-[300px] kls">Deeshix Technology - A Leading AI & Software devlopement  </h3>
         <p className="mt-10 text-[20px] text-left w-3/4 ml-10">
           Welcome to Deeshix Technology,
           your trusted partner for innovative and

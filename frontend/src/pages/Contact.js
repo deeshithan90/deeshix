@@ -23,7 +23,7 @@ const [sty,setsty] = useState(false)
          <div className='anss mt-ss'>
             <h1 className='text-5xl text-center text-white'>Contact Deeshix Technology</h1>
             <br/>
-            <h1 className='text-5xl text-center text-white'>Website Development & Digital Solutions</h1>
+            <h1 className='text-5xl text-center text-white'>AI & Software devlopment</h1>
             <br/>
             <h2 className='text-4xl text-center text-white'>Phone Number : +91 81481 81929</h2>
             <h3 className='text-2xl text-center text-white'>Madambakkam, Chennai – 600126</h3>
