@@ -52,7 +52,7 @@ const Footer = () => {
         <div>
             <h2 style={{color:'white',marginTop:10}}>© copy rights reserved 2026 www.deeshix.com</h2>
         </div>
-          <img src={image5} width={100} height={200} style={{borderRadius:600, width:200,height:200}}/>
+          <img src={image5} width={100} height={200} style={{borderRadius:600,height:60,width : 120}}/>
       </center>
     </footer>
     </>

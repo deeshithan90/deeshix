@@ -7,7 +7,8 @@ import e3 from '../images/images/turw.png'
 import award1 from '../images/images/award1.jpeg'
 import award2 from '../images/images/award2.jpeg'
 import award3 from '../images/images/deeshithan-Sathish.webp'
-import award4 from '../images/images/deeshithan-Sathish2.webp'
+import i from '../images/image-2/i.png'
+import award4 from '../images/images/deeshithan-Sathish2.png'
 
 const Home = ({ sett }) => {
   const [isTalking, setIsTalking] = useState(false);
@@ -247,25 +248,46 @@ const Home = ({ sett }) => {
 
   const [openFaq, setOpenFaq] = useState(null);
 
-  const [changeI,SetChangI] = useState(false)
+  const [changeI,setChangI] = useState(false)
+  const[changeII,setChangeII] = useState(false)
+  const [changeIII,setChangeIII] = useState(false)
   const [moreless,setmoreless] = useState(false)
+  const [confirm,setConfirm] = useState('1') 
 
   function Change(){
-      SetChangI(true)
+      setChangI(true)
   }
 
-  useEffect(()=>{
-      if(changeI){
-          setTimeout(() => {
-              SetChangI(false)
-          },2000);
-      }
-      else{
-        setTimeout(() => {
-              SetChangI(true)
-          },2000);
-      }
-  },[changeI])
+  useEffect(() => {
+  let timer;
+
+  if (confirm === '1') {
+    setChangI(true);
+    setChangeII(false);
+    setChangeIII(false);
+    timer = setTimeout(() => {
+      setConfirm('2');
+    }, 3000);
+  } else if (confirm === '2') {
+    setChangI(false);
+    setChangeII(false);
+    setChangeIII(true);
+    timer = setTimeout(() => {
+      setConfirm('3');
+    }, 3000);
+  } else if (confirm === '3') {
+    setChangI(false);
+    setChangeII(true);
+    setChangeIII(false);
+    timer = setTimeout(() => {
+      setConfirm('1');
+    }, 3000);
+  }
+
+  // CLEANUP: This cancels the timer if "confirm" changes before the 3 seconds are up
+  return () => clearTimeout(timer);
+}, [confirm]);
+
 
   return (
     <>
@@ -289,8 +311,9 @@ Publication date: 10 August 2026</p> : ""}
      </div>
      <div className="flex-1 flex justify-center mt-8 md:mt-0">
        <div className="w-80 h-64 rounded-xl flex items-center justify-center">
-          {changeI ? <img src={award4} alt="Deeshithan Sathish National Excellence award 1" className="award-img" /> : 
-          <img src={award3} alt="Deeshithan Sathish National Excellence award 2" className="award-img"/>}
+          {changeI ? <img src={award4} alt="Deeshithan Sathish National Excellence award 1" className="award-img" /> : ""}
+          {changeIII ?  <img src={award3} alt="Deeshithan Sathish National Excellence award 2" className="award-img"/> : ""}
+          {changeII ? <img src={award1} alt="Deeshithan Sathish National Excellence award 1" className="award-img" /> : "" }
        </div>
      </div>
    </section>
@@ -301,14 +324,13 @@ Publication date: 10 August 2026</p> : ""}
         <div className="full-award">
           <div>
             <div className="award">
-              <img src={award1} alt="Deeshithan Sathish golden award 1" className="award-img" />
-              <img src={award2} alt="Deeshithan Sathish golden award 2" className="award-img" />
+                <img src={i} alt="Deeshithan Sathish National Excellence award 1" className="award-img" />
             </div>
           </div>
           <div>
             <div>
               <p style={{textAlign : 'center',fontWeight : 'bold', fontSize : 15,color : 'white',width : 350,marginTop : 20}}>
-                Founder of deeshix Technology <span style={{color : '#CCFF00'}}>Deeshithan Sathish</span> was Honoured by the <span style={{color : '#CCFF00'}}>Golden Entertainment</span> for his passion, innvotation and remarkable contribution to technology at a young age.The Awards ceremony was graced by popular dirctor "perarasu" As the Chief Guest, who felicitated the awardees and inspired the gathering with her words of encourangement
+                Founder of deeshix Technology <span style={{color : '#CCFF00'}}>Deeshithan Sathish</span> "National Champian" was Honoured by the <span style={{color : 'aqua'}}>IBA EDU</span> for his passion, innvotation and remarkable contribution to technology at a young age.
               </p>
             </div>
           </div>

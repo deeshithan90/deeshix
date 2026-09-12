@@ -18,6 +18,11 @@ body {
   background-color: black;
 }
 
+.popopp{
+  width: 900px;
+  color: white;
+}
+
 .award-img{
   width: 120px;
   height: 90px;
@@ -986,6 +991,10 @@ html {
 
   .flexs {
     display: block;
+  }
+
+  .popopp{
+    width: 300px;
   }
 
   .f5 {

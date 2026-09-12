@@ -11,13 +11,10 @@ const Callus = () => {
             <h2 style={{ color: '#CCFF00' }}>Call to Action</h2>
             <p><FaPhone style={{ color: '#CCF000' }} /></p>
           </div>
-          <div>
-            <img src={logo} width={200} height={200}/>
-          </div>
         </div>
         <center>
           <div>
-            <p className='typing' style={{ color: '#CCF000' }}>Ready to build a website that fits your budget, meets your goals.</p>
+            <p className='typing' style={{ color: '#CCF000' }}>Ready to build a custom software an meets your goals.</p>
             <p className='typing' style={{ textAlign: 'center', color: '#CCF000' }}>Contact us today for a free consultation! Ph : (+91) 8148181929</p>
           </div>
         </center>

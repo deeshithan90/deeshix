@@ -108,7 +108,7 @@ const [formData, setFormData] = useState({
    <>
     <nav className='navbar z-50'>
        <div>
-          <img src={logo} className='w-[120px] h-[120px]' style={{borderRadius:265}}/>
+          <img src={logo} className='h-[50px]' style={{borderRadius:265}}/>
        </div>
        <div className='nav-sub'>
           <Link onClick={()=> window.location.href='/'}>
@@ -164,7 +164,7 @@ const [formData, setFormData] = useState({
           </Link>
        </div>
        <div>
-           <button  onClick={()=>{ setui(true)}}>Request Portfolio</button>
+           <button  onClick={()=>{ setui(true)}}>Request Product</button>
            {ui ? <form onSubmit={handleSubmit} className='input'>
   <p style={{textAlign:'right', color:'white'}} onClick={x}><FaXmark/></p>
 <br/>
@@ -186,10 +186,10 @@ const [formData, setFormData] = useState({
   <div className='ju'>
     <select name="productEnquiry" onChange={handleChange}>
       <option value="">Product enquiry</option>
-      <option value="Manpower solution">Manpower solution</option>
-      <option value="Web development">Web development</option>
-      <option value="Redesign Website">Redesign Website</option>
-      <option value="E-commerce">E-commerce</option>
+      <option value="Manpower solution">AI Powered Solutions</option>
+      <option value="Web development">Saas</option>
+      <option value="Redesign Website">Mobile</option>
+      <option value="E-commerce">Business Software</option>
     </select>
   </div>
 <br/>
@@ -266,7 +266,7 @@ const [formData, setFormData] = useState({
             </Link>
             <br/>
             <Link to={"/Request"} onClick={()=> window.speechSynthesis.cancel()}>
-            <p className='tex' style={{color:'white'}} onClick={()=> window.location.href='/Request'}>Request PortFolio</p>
+            <p className='tex' style={{color:'white'}} onClick={()=> window.location.href='/Request'}>Request Product</p>
             </Link>
             <br/>
             <Link onClick={()=> window.location.href='/ongoingproject'}>
