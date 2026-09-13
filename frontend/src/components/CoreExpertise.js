@@ -8,7 +8,9 @@ import {
 
 import {
   BiLogoMongodb,
+  BiLogoPostgresql,
   BiLogoPython,
+  BiPackage,
   BiUser
 } from 'react-icons/bi'
 
@@ -20,6 +22,10 @@ const CoreExpertise = () => {
     Frontend: [
       {
         name: 'React.js',
+        icon: <FaReact size={24} color="#61DBFB" />
+      },
+      {
+        name: 'Next.js',
         icon: <FaReact size={24} color="#61DBFB" />
       }
     ],
@@ -46,6 +52,10 @@ const CoreExpertise = () => {
         )
       },
       {
+        name: 'Nest.js',
+        icon: <FaNodeJs size={24} color="#68A063" />
+      },
+      {
         name: 'REST API',
         icon: <FaServer size={24} color="#f59e0b" />
       },
@@ -63,7 +73,11 @@ const CoreExpertise = () => {
       {
         name: 'Mongoose ODM',
         icon: <BiLogoMongodb size={24} color="#47A248" />
-      }
+      },
+      {
+        name: 'Postgresql',
+        icon: <BiLogoPostgresql size={24} color="#47A248" />
+      },
     ],
 
     Programming: [
@@ -77,7 +91,19 @@ const CoreExpertise = () => {
       {
         name: 'Artificial Intelligence',
         icon: <BiUser size={24} color="#8b5cf6" />
-      }
+      },
+      {
+        name: 'Pandas',
+        icon: <BiPackage size={24} color="#8b5cf6" />
+      },
+      {
+        name: 'Numpy',
+        icon: <BiPackage size={24} color="#8b5cf6" />
+      },
+      {
+        name: 'RAG',
+        icon: <BiPackage size={24} color="#8b5cf6" />
+      },
     ]
   }
 
