@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import robot from "../images/Robo.png";
+import React, { useEffect, useRef, useState } from "react";
+import robot from "../images/image-2/robo.mp4";
 import WhyChooseus from "../components/WhyChoose us";
 import Callus from "../components/Call-us";
 import CoreExpertise from "../components/CoreExpertise";
@@ -16,68 +16,115 @@ const Home = ({ sett }) => {
   const [mice, Setmice] = useState(true)
   const [InnerText, SetInnerText] = useState(false)
   function aiSpeak(text) { if (!text) return; const utterance = new SpeechSynthesisUtterance(text); const voices = speechSynthesis.getVoices(); utterance.voice = voices.find(v => v.lang === "en-US") || voices[0]; utterance.rate = 0.9; utterance.pitch = 0.1; utterance.volume = 1; speechSynthesis.speak(utterance); }
+  const getZiraVoice = () => {
+    const voices = window.speechSynthesis.getVoices();
+
+    return (
+      voices.find((voice) =>
+        voice.name.toLowerCase().includes("zira")
+      ) ||
+      voices.find((voice) =>
+        voice.name.includes("Microsoft Zira")
+      ) ||
+      voices.find((voice) =>
+        voice.lang === "en-US"
+      )
+    );
+  };
+
+
+  // Load voices
+  window.speechSynthesis.onvoiceschanged = () => {
+    window.speechSynthesis.getVoices();
+  };
+
+
   const speak = () => {
-    window.speechSynthesis.cancel()
-    SetInnerText(false)
-    const message = new SpeechSynthesisUtterance(
-      `Hello human. Welcome to Deeshix Technology, 
-      your trusted partner for innovative and result-driven 
-      web development solutions in Chennai, Tamil Nadu, India. 
-      We specialize in creating modern, responsive,
-       and high-performing websites that help businesses grow digitally.`);
+    window.speechSynthesis.cancel();
+
+    SetInnerText(false);
+
+    const message = new SpeechSynthesisUtterance(`
+    Hello human. Welcome to Deeshix Technology,
+    your trusted partner for innovative and result-driven.
+    A. I Powered solutions in Chennai, Tamil Nadu, India.
+
+   we Specialized in A. I.  & Emerging Technologies.   Open-Source Developer.  Building real-world software solutions.  & Exploring AI- Powered Web & Mobile application.
+  `);
+
+    // Select Microsoft Zira voice
+    const ziraVoice = getZiraVoice();
+
+    if (ziraVoice) {
+      message.voice = ziraVoice;
+    }
+
     message.rate = 0.9;
-    message.pitch = 0.1;
+    message.pitch = 1;
     message.volume = 1;
 
-    // Start animation
+    // Start Deesli talking video
     setIsTalking(true);
+
     setTimeout(() => {
-      Settext(true)
+      Settext(true);
     }, 2000);
 
-    // Stop animation when speech ends
+    // Speech finished
     message.onend = () => {
       setIsTalking(false);
-      Settext(false)
+      Settext(false);
     };
 
     window.speechSynthesis.speak(message);
   };
 
+
   const speak2 = () => {
-    window.speechSynthesis.cancel()
-    Settext(false)
-    const message = new SpeechSynthesisUtterance(
-      `
-      Meet Deeshithan Sathish - 
-            Founder of Deeshix Technology, I am 12 years 
-            old self-taught MERN stack developer specialized in MongoDB, 
-            Express.js , React.js Node.js Mongoose ODM TanstackQuery , JWT , 
-            dotenv, cookieparser, Java script Type script , css , html, tailwindcss python, 
-            Django. Hi, I’m Deeshithan Sathish Young Full-Stack (MERN) Developer & Future
-             AI Engineer Chennai, Tamil Nadu, India 🇮🇳. I build modern, responsive, and scalable 
-             web and mobile applications using industry-standard technologies. 
-             I have successfully delivered real client portfolio projects 
-            independently and continuously expand my skills into AI-powered applications.
-`);
+    window.speechSynthesis.cancel();
+
+    Settext(false);
+
+    const message = new SpeechSynthesisUtterance(`
+    Meet Deeshithan Sathish,
+    Founder of Deeshix Technology.
+
+    I am a self-taught MERN Stack Developer specializing in
+
+    build modern, responsive, and scalable
+    A. I Powered web.  mobile. Saas. Business Sofwarer using industry-standard technologies.
+
+    I have successfully delivered real client projects
+    independently and continuously expand my skills
+    into AI-powered applications.
+  `);
+
+    // Select Microsoft Zira voice
+    const ziraVoice = getZiraVoice();
+
+    if (ziraVoice) {
+      message.voice = ziraVoice;
+    }
+
     message.rate = 0.9;
-    message.pitch = 0. - 1;
+    message.pitch = 1;
     message.volume = 1;
 
-    // Start animation
+    // Start Deesli talking
     setIsTalking(true);
+
     setTimeout(() => {
-      SetInnerText(true)
+      SetInnerText(true);
     }, 3000);
 
-    // Stop animation when speech ends
+    // Stop when speech ends
     message.onend = () => {
       setIsTalking(false);
-      SetInnerText(false)
+      SetInnerText(false);
     };
 
     window.speechSynthesis.speak(message);
-  }
+  };
 
 
   const SpeechRecognition =
@@ -248,100 +295,85 @@ const Home = ({ sett }) => {
 
   const [openFaq, setOpenFaq] = useState(null);
 
-  const [changeI,setChangI] = useState(false)
-  const[changeII,setChangeII] = useState(false)
-  const [changeIII,setChangeIII] = useState(false)
-  const [moreless,setmoreless] = useState(false)
-  const [confirm,setConfirm] = useState('1') 
+  const [changeI, setChangI] = useState(false)
+  const [changeII, setChangeII] = useState(false)
+  const [changeIII, setChangeIII] = useState(false)
+  const [moreless, setmoreless] = useState(false)
 
-  function Change(){
-      setChangI(true)
+  function Change() {
+    setChangI(true)
   }
+
+  const [confirm, setConfirm] = useState(0);
 
   useEffect(() => {
-  let timer;
+    const timer = setInterval(() => {
+      setConfirm((prev) => (prev + 1) % 4);
+    }, 4000);
 
-  if (confirm === '1') {
-    setChangI(true);
-    setChangeII(false);
-    setChangeIII(false);
-    timer = setTimeout(() => {
-      setConfirm('2');
-    }, 3000);
-  } else if (confirm === '2') {
-    setChangI(false);
-    setChangeII(false);
-    setChangeIII(true);
-    timer = setTimeout(() => {
-      setConfirm('3');
-    }, 3000);
-  } else if (confirm === '3') {
-    setChangI(false);
-    setChangeII(true);
-    setChangeIII(false);
-    timer = setTimeout(() => {
-      setConfirm('1');
-    }, 3000);
-  }
+    return () => clearInterval(timer);
+  }, []);
 
-  // CLEANUP: This cancels the timer if "confirm" changes before the 3 seconds are up
-  return () => clearTimeout(timer);
-}, [confirm]);
+  const awardImages = [award4,i, award3, award1];
+
+  const refs = useRef(null)
+
+  useEffect(() => {
+    if (!refs.current) {
+      return;
+    }
+
+    if (isTalking) {
+      refs.current.play()
+    }
+    else {
+      refs.current.pause()
+      refs.current.currentTime = 0;
+    }
+
+  }, [isTalking])
 
 
   return (
     <>
       <div className="mt-40">
 
-   <section className="flex flex-col md:flex-row items-center justify-between min-h-[60vh] bg-gradient-to-br from-blue-500 to-purple-600 p-12 rounded-2xl shadow-2xl mt-8 max-w-6xl mx-auto">
-     <div className="flex-1 text-center md:text-left text-white">
-       <h1 className="text-3xl font-extrabold mb-4">ANI NEWS | Published the Tamil Nadu awards | 10th August 2026</h1>
-       <p className="text-1xl mb-6">Deeshithan Sathish was featured among the 90+ achievers recognised at Tamilnadu Awards 2026 in Chennai. Organized by National Excellence Council He was listed as Award No. 85 and recognised with the Tamil Nadu Excellence Award for <span className="text-amber-300" style={{fontWeight : 'bold'}}>Young AI Innovator & Software Developer.</span></p>
-       {moreless ? <p className="text-1xl mb-6">The Awards ceremony was graced by popular actoress "Lila Mehdin" As the Chief Celebrity Guest, who felicitated the awardees and inspired the gathering with her words of encourangement. Award: National Excellence Council / Tamil Nadu Awards 2026
-Recognition: Tamil Nadu Excellence Award for Young AI Innovator & Software Developer
-Awardee: Deeshithan Sathish
-Award No.: 85
-ANI role: Published/distributed the report about the Tamilnadu Awards 2026
-Publication date: 10 August 2026</p> : ""}
-       {
-          moreless ? <button className="px-8 py-4 bg-white text-blue-700 rounded-lg font-bold shadow hover:bg-blue-50 transition" onClick={()=> setmoreless(false)}>Read Less</button> 
-          : 
-          <button className="px-8 py-4 bg-white text-blue-700 rounded-lg font-bold shadow hover:bg-blue-50 transition" onClick={()=> setmoreless(true)}>Read More</button>
-       }
-     </div>
-     <div className="flex-1 flex justify-center mt-8 md:mt-0">
-       <div className="w-80 h-64 rounded-xl flex items-center justify-center">
-          {changeI ? <img src={award4} alt="Deeshithan Sathish National Excellence award 1" className="award-img" /> : ""}
-          {changeIII ?  <img src={award3} alt="Deeshithan Sathish National Excellence award 2" className="award-img"/> : ""}
-          {changeII ? <img src={award1} alt="Deeshithan Sathish National Excellence award 1" className="award-img" /> : "" }
-       </div>
-     </div>
-   </section>
-
-<br/>
-<br/>
-
-        <div className="full-award">
-          <div>
-            <div className="award">
-                <img src={i} alt="Deeshithan Sathish National Excellence award 1" className="award-img" />
+        <section className="flex flex-col md:flex-row items-center justify-between min-h-[60vh] bg-gradient-to-br from-blue-500 to-purple-600 p-12 rounded-2xl shadow-2xl mt-8 max-w-6xl mx-auto">
+          <div className="flex-1 text-center md:text-left text-white">
+            <h1 className="text-3xl font-extrabold mb-4">ANI NEWS | Published the Tamil Nadu awards | 10th August 2026</h1>
+            <p className="text-1xl mb-6">Deeshithan Sathish was featured among the 90+ achievers recognised at Tamilnadu Awards 2026 in Chennai. Organized by National Excellence Council He was listed as Award No. 85 and recognised with the Tamil Nadu Excellence Award for <span className="text-amber-300" style={{ fontWeight: 'bold' }}>Young AI Innovator & Software Developer.</span></p>
+            {moreless ? <p className="text-1xl mb-6">The Awards ceremony was graced by popular actoress "Lila Mehdin" As the Chief Celebrity Guest, who felicitated the awardees and inspired the gathering with her words of encourangement. Award: National Excellence Council / Tamil Nadu Awards 2026
+              Recognition: Tamil Nadu Excellence Award for Young AI Innovator & Software Developer
+              Awardee: Deeshithan Sathish
+              Award No.: 85
+              ANI role: Published/distributed the report about the Tamilnadu Awards 2026
+              Publication date: 10 August 2026</p> : ""}
+            {
+              moreless ? <button className="px-8 py-4 bg-white text-blue-700 rounded-lg font-bold shadow hover:bg-blue-50 transition" onClick={() => setmoreless(false)}>Read Less</button>
+                :
+                <button className="px-8 py-4 bg-white text-blue-700 rounded-lg font-bold shadow hover:bg-blue-50 transition" onClick={() => setmoreless(true)}>Read More</button>
+            }
+          </div>
+          <div className="flex-1 flex justify-center mt-8 md:mt-0">
+            <div className="award-slider">
+              <img
+                key={confirm}
+                src={awardImages[confirm]}
+                alt={`Deeshithan Sathish National Excellence award ${confirm + 1}`}
+                className="award-slide"
+              />
             </div>
           </div>
-          <div>
-            <div>
-              <p style={{textAlign : 'center',fontWeight : 'bold', fontSize : 15,color : 'white',width : 350,marginTop : 20}}>
-                Founder of deeshix Technology <span style={{color : '#CCFF00'}}>Deeshithan Sathish</span> "National Champian" was Honoured by the <span style={{color : 'aqua'}}>IBA EDU</span> for his passion, innvotation and remarkable contribution to technology at a young age.
-              </p>
-            </div>
-          </div>
-        </div>
+        </section>
 
         <div className="container mb-0 z-0 flexss mt-0 p-0">
-          <a href="/Web-devlopement"><img
+          <a href="/Web-devlopement"><video
+            ref={refs}
             src={robot}
-            alt="Advance Latest Technology"
-            className={`robot ${isTalking ? "walking" : ""}`}
-            style={{ width: 440, height: 240, }}
+            muted
+            loop
+            playsInline
+            style={{ width: 500, height: 250, }}
           /></a>
           <div className="p-3">
             <button onClick={speak} className="speak-btn">
@@ -417,13 +449,13 @@ Publication date: 10 August 2026</p> : ""}
       <WhyChooseus />
       <div className="flexs justifiy-center gap-30 mt-40 p-10">
         <div className="w-fulls">
-          <h2 className="lg:text-2xl text-center mb-10 cjs p-2 w-1/2">Vission</h2>
+          <h2 className="lg:text-2xl text-center mb-10 cjs p-2 w-1/2 rounded-full">Vission</h2>
           <p className="w-1/2">
             To help businesses and startups grow through smart, innovative web solutions.
           </p>
         </div>
         <div className="w-fulls">
-          <h2 className="lg:text-2xl text-center p-2 w-1/2 mb-10 cjs">Mission</h2>
+          <h2 className="lg:text-2xl text-center p-2 w-1/2 mb-10 cjs rounded-full">Mission</h2>
           <p className="w-full">
             Our mission is to help entrepreneurs, startups, and small to medium businesses grow online by delivering high-quality web development, e-commerce, and digital solutions.
           </p>

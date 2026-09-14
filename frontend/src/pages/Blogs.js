@@ -27,11 +27,12 @@ const Blogs = () => {
             <div className='flexs w-full justifiy-center gap-20 mt-0'>
                 <img src={blog3} className='w-[350px] h-[350px]' />
                 <div>
-                    <h2 className='text-whites mb-10 lg:w-[600px] text-2xl xxs text-center'>Why Choose the MERN Stack?</h2>
+                    <h2 className='text-whites mb-10 lg:w-[600px] text-2xl xxs text-center'>MERN Stack: Why Modern Businesses Are Choosing Full-Stack JavaScript</h2>
                     <p className='w-[400px] text-2xl'>
-                        The MERN Stack—MongoDB, Express.js, React, and Node.js—is one of the most popular technologies for modern web development. Using JavaScript across the entire application makes development faster, easier to maintain, and highly scalable.
-                        MERN is ideal for building business websites, dashboards, e-commerce platforms, HRMS, and custom software. It also integrates smoothly with AI services, payment gateways, and cloud platforms.
-                        At Deeshix, we use the MERN Stack to develop secure, high-performance applications tailored to each client's needs. We focus on delivering reliable solutions that support long-term business growth.
+                       Modern businesses need applications that are fast, scalable and easy to maintain. The MERN stack—MongoDB, Express.js, React and Node.js—provides developers with a powerful technology ecosystem for building modern web applications.
+From business dashboards to SaaS platforms and e-commerce applications, MERN can support a wide range of digital products.
+Deeshix Technology approach:
+We use modern frontend, backend, database and API technologies to create scalable solutions based on each business requirement.
                     </p>
                 </div>
             </div>
@@ -40,11 +41,10 @@ const Blogs = () => {
             <div className='flexs w-full justifiy-center gap-40 mt-0 p-16 ml-0'>
                 <img src={blog2} className='w-[350px] h-[350px]' />
                 <div>
-                    <h1 className='text-whites mb-10 lg:w-[600px] text-2xl xxs text-center'>The Future of Software Development</h1>
+                    <h1 className='text-whites mb-10 lg:w-[600px] text-2xl xxs text-center'>Website vs Web Application: What Does Your Business Really Need?</h1>
                     <p className='w-full'>
-                        Artificial Intelligence is transforming software development by improving productivity, automation, and user experience. Developers now use AI to speed up coding, identify bugs, analyze data, and create smarter applications.
-                        However, successful software still depends on skilled developers who understand business requirements and build secure, reliable solutions. AI is a powerful tool that enhances development rather than replacing it.
-                        At Deeshix, we combine modern technologies with AI to create web applications, mobile apps, and custom software that solve real-world problems. We believe the future of software lies in innovation, quality, and continuous learning.
+                       Many businesses use the terms website and web application interchangeably, but they serve different purposes.
+                       A business website primarily provides information about a company, products or services. A web application provides interactive functionality such as dashboards, authentication, data management, online transactions and automation.
                     </p>
                 </div>
             </div>
